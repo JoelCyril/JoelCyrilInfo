@@ -71,7 +71,7 @@ export const Projects: React.FC = () => {
                 <button
                   key={tab.label}
                   onClick={() => setActiveFilter(tab.label as any)}
-                  className={`px-4 py-2 rounded-full text-xs font-mono transition-all duration-200 border ${
+                  className={`px-3.5 py-1.5 rounded-full text-xs font-mono transition-all duration-200 border ${
                     isSelected
                       ? 'bg-gradient-to-r from-[#ff5d35] to-[#f97316] text-white border-[#ff5d35] shadow-lg shadow-[#ff5d35]/25 font-bold'
                       : 'bg-white/[0.04] text-slate-400 hover:text-white border-white/[0.08] hover:border-white/[0.15]'
@@ -84,8 +84,8 @@ export const Projects: React.FC = () => {
           </div>
         </div>
 
-        {/* Projects Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        {/* Projects Grid: 3 in a row on desktop */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
           {filteredProjects.map((project, idx) => (
             <ProjectCard
               key={project.id}
