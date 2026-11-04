@@ -1,0 +1,181 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080c14" />
+      <stop offset="50%" stop-color="#0c1322" />
+      <stop offset="100%" stop-color="#060910" />
+    </linearGradient>
+    <linearGradient id="hullGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0e2238" stop-opacity="0.9" />
+      <stop offset="50%" stop-color="#194165" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#0e2238" stop-opacity="0.9" />
+    </linearGradient>
+    <linearGradient id="glowTeal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+    <linearGradient id="glowOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff5d35" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#16253d" stroke-width="0.8" opacity="0.4" />
+      <circle cx="0" cy="0" r="1.5" fill="#06b6d4" opacity="0.3" />
+    </pattern>
+    <filter id="neon" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="1200" height="700" fill="url(#bgGrad)" />
+  <rect width="1200" height="700" fill="url(#grid)" />
+
+  <!-- Blueprint Header / Metadata -->
+  <g font-family="'JetBrains Mono', monospace" fill="#64748b" font-size="12">
+    <text x="50" y="55" fill="#06b6d4" font-size="14" font-weight="700" letter-spacing="2">SYSTEM: SUB-ROV-ESP32 // SPECIFICATION SHEET</text>
+    <text x="50" y="80">DEPTH RATING: 30M · WATERPROOF ACRYLIC CYLINDER (ID: 90MM, OD: 100MM)</text>
+    <text x="50" y="100">TELEMETRY: RS-485 TETHERED LINK / DUAL BRUSHLESS THRUSTERS / REAL-TIME SENSING</text>
+    <text x="1000" y="55" fill="#ff5d35" text-anchor="end" font-weight="700">STATUS: PROTOTYPE V2.1</text>
+    <text x="1000" y="80" text-anchor="end">DESIGNED BY: JOEL THOMAS CYRIL</text>
+  </g>
+
+  <!-- Circular Radar / Sonar Grid overlay on Right -->
+  <g opacity="0.15" transform="translate(600, 360)">
+    <circle r="260" stroke="#06b6d4" stroke-width="1" fill="none" stroke-dasharray="4 4" />
+    <circle r="180" stroke="#06b6d4" stroke-width="1" fill="none" />
+    <circle r="100" stroke="#06b6d4" stroke-width="1" fill="none" stroke-dasharray="2 2" />
+    <line x1="-300" y1="0" x2="300" y2="0" stroke="#06b6d4" stroke-width="0.8" />
+    <line x1="0" y1="-300" x2="0" y2="300" stroke="#06b6d4" stroke-width="0.8" />
+  </g>
+
+  <!-- MAIN SUBMERSIBLE BODY (Cutaway Blueprint) -->
+  <g transform="translate(200, 220)">
+    <!-- Acrylic Pressure Hull Tube -->
+    <rect x="180" y="60" width="460" height="180" rx="30" fill="url(#hullGrad)" stroke="#38bdf8" stroke-width="2.5" />
+    
+    <!-- Transparent Hull Rings / Bulkheads -->
+    <line x1="280" y1="60" x2="280" y2="240" stroke="#0284c7" stroke-width="2" stroke-dasharray="4 3" />
+    <line x1="420" y1="60" x2="420" y2="240" stroke="#0284c7" stroke-width="2" stroke-dasharray="4 3" />
+    <line x1="560" y1="60" x2="560" y2="240" stroke="#0284c7" stroke-width="2" stroke-dasharray="4 3" />
+
+    <!-- Front Optical Dome (Camera & Lighting) -->
+    <path d="M 640 60 A 90 90 0 0 1 640 240 Z" fill="#0c233c" stroke="#38bdf8" stroke-width="3" opacity="0.8" />
+    <!-- Camera Unit inside Dome -->
+    <rect x="635" y="130" width="35" height="40" rx="6" fill="#1e293b" stroke="#06b6d4" stroke-width="1.5" />
+    <circle cx="655" cy="150" r="12" fill="#0f172a" stroke="#38bdf8" stroke-width="2" />
+    <circle cx="655" cy="150" r="5" fill="#06b6d4" filter="url(#neon)" />
+    <!-- Twin LED Illuminators -->
+    <circle cx="645" cy="90" r="9" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5" filter="url(#neon)" opacity="0.9" />
+    <circle cx="645" cy="210" r="9" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5" filter="url(#neon)" opacity="0.9" />
+
+    <!-- Internal Electronics Rack -->
+    <g transform="translate(210, 85)">
+      <!-- Chassis Mounting Rails -->
+      <rect x="0" y="110" width="410" height="8" rx="3" fill="#334155" />
+      <rect x="0" y="15" width="410" height="8" rx="3" fill="#334155" />
+
+      <!-- ESP32 Controller Board -->
+      <rect x="180" y="35" width="95" height="65" rx="5" fill="#0f172a" stroke="#ff5d35" stroke-width="2" />
+      <rect x="195" y="45" width="45" height="30" rx="2" fill="#1e293b" stroke="#cbd5e1" stroke-width="0.8" />
+      <text x="217" y="64" font-family="'JetBrains Mono', monospace" font-size="8" fill="#ff5d35" font-weight="bold" text-anchor="middle">ESP32-S3</text>
+      <!-- Status LED on ESP32 -->
+      <circle cx="260" cy="48" r="3" fill="#10b981" filter="url(#neon)" />
+
+      <!-- Sensors (MPU6050 IMU + Pressure ADC) -->
+      <rect x="290" y="45" width="35" height="30" rx="3" fill="#1e293b" stroke="#06b6d4" stroke-width="1.2" />
+      <text x="307" y="64" font-family="'JetBrains Mono', monospace" font-size="6" fill="#38bdf8" text-anchor="middle">IMU 6DOF</text>
+
+      <!-- Dual ESC Modules (Electronic Speed Controllers) -->
+      <rect x="105" y="35" width="55" height="30" rx="3" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5" />
+      <text x="132" y="52" font-family="'JetBrains Mono', monospace" font-size="7" fill="#94a3b8" text-anchor="middle">ESC A</text>
+      <rect x="105" y="72" width="55" height="30" rx="3" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5" />
+      <text x="132" y="89" font-family="'JetBrains Mono', monospace" font-size="7" fill="#94a3b8" text-anchor="middle">ESC B</text>
+
+      <!-- 3S LiPo Battery Pack -->
+      <rect x="10" y="35" width="80" height="70" rx="4" fill="#0284c7" stroke="#38bdf8" stroke-width="1.5" opacity="0.8" />
+      <text x="50" y="65" font-family="'JetBrains Mono', monospace" font-size="8" fill="#f8fafc" font-weight="bold" text-anchor="middle">3S LiPo</text>
+      <text x="50" y="80" font-family="'JetBrains Mono', monospace" font-size="7" fill="#cbd5e1" text-anchor="middle">11.1V 4200mAh</text>
+    </g>
+
+    <!-- Rear Bulkhead & Cable Penetrator -->
+    <path d="M 180 60 L 150 75 L 150 225 L 180 240 Z" fill="#1e293b" stroke="#0284c7" stroke-width="2" />
+    <rect x="125" y="135" width="25" height="30" fill="#0f172a" stroke="#ff5d35" stroke-width="1.5" />
+    <!-- Tether Wire (RS485 & Video) -->
+    <path d="M 125 150 C 70 150, 40 100, -50 80" fill="none" stroke="#ff5d35" stroke-width="3" stroke-dasharray="6 3" filter="url(#neon)" />
+    <text x="-60" y="70" font-family="'JetBrains Mono', monospace" font-size="10" fill="#ff5d35" font-weight="bold">NEUTRAL-BUOYANCY TETHER</text>
+
+    <!-- External Thrusters (Top & Bottom / Port & Starboard) -->
+    <!-- Top Thruster (Vertical Depth Control) -->
+    <g transform="translate(380, -20)">
+      <rect x="0" y="0" width="80" height="50" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="2" />
+      <ellipse cx="40" cy="25" rx="35" ry="15" fill="#0f172a" stroke="#06b6d4" stroke-width="1.5" />
+      <!-- Propeller Blades -->
+      <path d="M 25 25 Q 40 10 55 25 Q 40 40 25 25" fill="#0284c7" />
+      <text x="40" y="-8" font-family="'JetBrains Mono', monospace" font-size="9" fill="#38bdf8" text-anchor="middle">VERTICAL THRUSTER</text>
+    </g>
+
+    <!-- Port Main Thruster (Propulsion) -->
+    <g transform="translate(60, 20)">
+      <rect x="0" y="0" width="70" height="45" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="1.8" />
+      <rect x="-18" y="12" width="18" height="20" fill="#0f172a" stroke="#38bdf8" stroke-width="1" />
+      <!-- Propeller -->
+      <path d="M -22 2 Q -15 22 -22 42" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" />
+      <!-- Water Jet Stream -->
+      <path d="M -26 22 L -80 15 M -26 22 L -80 30" stroke="#06b6d4" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.7" />
+      <text x="35" y="-6" font-family="'JetBrains Mono', monospace" font-size="9" fill="#38bdf8" text-anchor="middle">PORT THRUSTER</text>
+    </g>
+
+    <!-- Starboard Main Thruster (Propulsion) -->
+    <g transform="translate(60, 235)">
+      <rect x="0" y="0" width="70" height="45" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="1.8" />
+      <rect x="-18" y="12" width="18" height="20" fill="#0f172a" stroke="#38bdf8" stroke-width="1" />
+      <path d="M -22 2 Q -15 22 -22 42" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" />
+      <path d="M -26 22 L -80 15 M -26 22 L -80 30" stroke="#06b6d4" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.7" />
+      <text x="35" y="60" font-family="'JetBrains Mono', monospace" font-size="9" fill="#38bdf8" text-anchor="middle">STARBOARD THRUSTER</text>
+    </g>
+  </g>
+
+  <!-- Annotations and Technical Callouts -->
+  <g font-family="'JetBrains Mono', monospace" font-size="11" fill="#94a3b8">
+    <!-- Callout 1: Optical Dome -->
+    <polyline points="850,370 920,310 1080,310" fill="none" stroke="#06b6d4" stroke-width="1.2" />
+    <circle cx="850" cy="370" r="3" fill="#06b6d4" />
+    <text x="930" y="295" fill="#38bdf8" font-weight="bold">HEMISPHERICAL ACRYLIC DOME</text>
+    <text x="930" y="325">120° FOV HD Low-Light Camera</text>
+    <text x="930" y="340">Dual 1200-Lumen High-CRI LED Arrays</text>
+
+    <!-- Callout 2: Controller -->
+    <polyline points="440,310 500,160 680,160" fill="none" stroke="#ff5d35" stroke-width="1.2" />
+    <circle cx="440" cy="310" r="3" fill="#ff5d35" />
+    <text x="520" y="145" fill="#ff5d35" font-weight="bold">CENTRAL PROCESSING UNIT</text>
+    <text x="520" y="175">ESP32 Dual-Core @ 240MHz</text>
+    <text x="520" y="190">PID Closed-Loop Depth &amp; Attitude Stabilization</text>
+
+    <!-- Callout 3: Depth & Pressure -->
+    <polyline points="520,380 580,480 720,480" fill="none" stroke="#10b981" stroke-width="1.2" />
+    <circle cx="520" cy="380" r="3" fill="#10b981" />
+    <text x="600" y="470" fill="#10b981" font-weight="bold">MS5837 DEPTH SENSOR</text>
+    <text x="600" y="500">I2C High-Resolution Depth Telemetry (0.2cm Res)</text>
+    <text x="600" y="515">Real-Time Temperature &amp; Seal Integrity Watchdog</text>
+
+    <!-- Callout 4: Thruster System -->
+    <polyline points="240,480 180,540 50,540" fill="none" stroke="#38bdf8" stroke-width="1.2" />
+    <circle cx="240" cy="480" r="3" fill="#38bdf8" />
+    <text x="50" y="530" fill="#38bdf8" font-weight="bold">DIFFERENTIAL THRUST PROPULSION</text>
+    <text x="50" y="560">Dual Coreless Brushless Motors + 30A Bi-Dir ESCs</text>
+    <text x="50" y="575">Active Vector Steering &amp; Auto-Leveling</text>
+  </g>
+
+  <!-- Technical Spec Footer Box -->
+  <g transform="translate(50, 620)" font-family="'JetBrains Mono', monospace" font-size="11">
+    <rect x="0" y="0" width="1100" height="50" rx="8" fill="#0f172a" stroke="#1e293b" />
+    <text x="25" y="30" fill="#64748b">POWER: <tspan fill="#f1f5f9">11.1V 4.2Ah LiPo (2.5h Endurance)</tspan></text>
+    <text x="350" y="30" fill="#64748b">COMMUNICATION: <tspan fill="#f1f5f9">Half-Duplex RS-485 / WebSockets</tspan></text>
+    <text x="730" y="30" fill="#64748b">PAYLOAD: <tspan fill="#f1f5f9">Water Sampling / Environmental Sonar</tspan></text>
+  </g>
+</svg>
