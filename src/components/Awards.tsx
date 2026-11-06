@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { AWARDS } from '../data/awardsData';
 import { CERTIFICATES } from '../data/certificatesData';
-import { ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight, CheckCircle2, Trophy, Users, Globe } from 'lucide-react';
 
 interface AwardsProps {
   onOpenPhoto: (photoId: number) => void;
@@ -28,7 +28,7 @@ export const Awards: React.FC<AwardsProps> = ({ onOpenPhoto }) => {
             </span>
           </h2>
           <p className="text-base text-slate-300">
-            Proven leadership across robotics, engineering design, collegiate STEM, speedcubing, and athletics. Click any honor to inspect verified photographic evidence.
+            Proven leadership across robotics, engineering design, collegiate STEM, varsity athletics, and diplomatic forums.
           </p>
         </div>
 
@@ -40,18 +40,29 @@ export const Awards: React.FC<AwardsProps> = ({ onOpenPhoto }) => {
               : null;
 
             return (
-              <motion.button
-                type="button"
+              <motion.div
                 key={award.id}
                 onClick={() => award.photoId && onOpenPhoto(award.photoId)}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: idx * 0.04 }}
-                className="glass-card rounded-2xl p-5 text-left border border-white/[0.08] hover:border-[#ff5d35]/40 flex flex-col justify-between group transition-all"
+                className={`glass-card rounded-2xl p-5 text-left border flex flex-col justify-between group transition-all ${
+                  award.photoId
+                    ? 'cursor-pointer hover:border-[#ff5d35]/40 border-white/[0.08]'
+                    : 'cursor-default hover:border-white/[0.18] border-white/[0.08]'
+                }`}
+                role={award.photoId ? 'button' : undefined}
+                tabIndex={award.photoId ? 0 : undefined}
+                onKeyDown={(e) => {
+                  if (award.photoId && (e.key === 'Enter' || e.key === ' ')) {
+                    e.preventDefault();
+                    onOpenPhoto(award.photoId);
+                  }
+                }}
               >
                 <div>
-                  {/* Photo Preview Thumbnail */}
+                  {/* Photo Preview Thumbnail if certificate scan exists */}
                   {cert && (
                     <div className="w-full h-36 rounded-xl overflow-hidden bg-[#16141e] mb-4 border border-white/[0.06] relative">
                       <img
@@ -64,6 +75,25 @@ export const Awards: React.FC<AwardsProps> = ({ onOpenPhoto }) => {
                       <div className="absolute bottom-2 right-2 px-2 py-0.5 rounded text-[10px] font-mono bg-black/70 text-slate-300 border border-white/[0.1] backdrop-blur-sm">
                         Inspect Trophy ↗
                       </div>
+                    </div>
+                  )}
+
+                  {/* Icon Header for verified school representation without certificate scan */}
+                  {!cert && (
+                    <div className="w-full h-24 rounded-xl bg-gradient-to-br from-white/[0.04] to-[#ff5d35]/[0.05] mb-4 border border-white/[0.06] p-3 flex items-center justify-between">
+                      <div className="w-10 h-10 rounded-lg bg-white/[0.05] border border-white/[0.1] flex items-center justify-center">
+                        {award.category === 'Sports' ? (
+                          <Trophy className="w-5 h-5 text-amber-400" />
+                        ) : award.id === 'mun-delegate' ? (
+                          <Globe className="w-5 h-5 text-indigo-400" />
+                        ) : (
+                          <Users className="w-5 h-5 text-cyan-400" />
+                        )}
+                      </div>
+                      <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-emerald-500/15 text-emerald-300 border border-emerald-500/30 flex items-center gap-1">
+                        <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
+                        Official Representation
+                      </span>
                     </div>
                   )}
 
@@ -93,11 +123,23 @@ export const Awards: React.FC<AwardsProps> = ({ onOpenPhoto }) => {
                   </p>
                 </div>
 
-                <div className="mt-4 pt-3 border-t border-white/[0.06] flex items-center justify-between text-xs font-mono text-slate-400 group-hover:text-[#ff5d35] transition-colors">
-                  <span>View Evidence Scan</span>
-                  <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                <div className="mt-4 pt-3 border-t border-white/[0.06] flex items-center justify-between text-xs font-mono">
+                  {award.photoId ? (
+                    <>
+                      <span className="text-slate-400 group-hover:text-[#ff5d35] transition-colors">View Evidence Scan</span>
+                      <ArrowUpRight className="w-3.5 h-3.5 text-slate-400 group-hover:text-[#ff5d35] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                    </>
+                  ) : (
+                    <>
+                      <span className="text-emerald-400/90 flex items-center gap-1.5">
+                        <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+                        <span>Active Record</span>
+                      </span>
+                      <span className="text-[10px] text-slate-500 font-mono">Varsity / Executive</span>
+                    </>
+                  )}
                 </div>
-              </motion.button>
+              </motion.div>
             );
           })}
         </div>

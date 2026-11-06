@@ -2,6 +2,32 @@ import { ExperienceItem } from '../types';
 
 export const EXPERIENCES: ExperienceItem[] = [
   {
+    period: '2023 – PRESENT',
+    role: 'Secretary · ADIS Robotics Club (3-Year Member)',
+    organization: 'Abu Dhabi Indian School (ADIS)',
+    location: 'Abu Dhabi, UAE',
+    badge: '3-Year Leadership Tenure',
+    description: 'Serving as the elected Secretary after 3 consecutive years of dedicated commitment to the school robotics club—overseeing technical workshops, lab equipment, and competition preparation.',
+    highlights: [
+      'Elected Secretary to govern weekly club sessions, technical modules, and member training.',
+      'Mentored younger students in autonomous navigation, EV3 / SPIKE coding, and mechanical assemblies.',
+      'Coordinated technical logistics and team readiness for regional robotics challenges.'
+    ]
+  },
+  {
+    period: '2024 – PRESENT',
+    role: 'Male Varsity Football Player · ADEK Cup (2 Years)',
+    organization: 'Abu Dhabi Department of Education and Knowledge (ADEK)',
+    location: 'Abu Dhabi, UAE',
+    badge: 'Varsity Team · Ongoing Campaign',
+    description: 'Selected for the ADIS Male Varsity Football Team competing in the prestigious ADEK Cup across two consecutive seasons, with the current 2025–26 tournament campaign actively in progress.',
+    highlights: [
+      'Starting varsity player competing against premier inter-school football programs across Abu Dhabi.',
+      'Currently active in ongoing 2025–26 ADEK Cup tournament match fixtures and tactical training.',
+      'Demonstrated high athletic discipline alongside rigorous academic and engineering commitments.'
+    ]
+  },
+  {
     period: '2025 – 2026',
     role: 'Team Captain & Lead Robotics Engineer',
     organization: 'FIRST LEGO League (UNEARTHED)',
@@ -12,6 +38,19 @@ export const EXPERIENCES: ExperienceItem[] = [
       'Engineered high-torque modular gear mechanisms and rapid attachment mounts.',
       'Secured First Runner-Up in the Robot Game across top Abu Dhabi schools.',
       'Mentored junior students on algorithmic thinking and engineering design logs.'
+    ]
+  },
+  {
+    period: '2024 – 2025',
+    role: 'Student Delegate · Model United Nations (MUN)',
+    organization: 'Model United Nations Conference',
+    location: 'UAE',
+    badge: 'Diplomatic Delegation',
+    description: 'Represented assigned delegation in formal parliamentary committee proceedings, debating geopolitical strategy, drafting multilateral working papers, and negotiating consensus.',
+    highlights: [
+      'Researched foreign policy, international law, and socio-economic frameworks for committee topics.',
+      'Authored draft resolutions and advocated policies through impromptu caucus speeches.',
+      'Sharpened cross-cultural diplomacy, analytical negotiation, and persuasive rhetoric.'
     ]
   },
   {
@@ -48,7 +87,7 @@ export const EXPERIENCES: ExperienceItem[] = [
     highlights: [
       'Perfect 100/100 score in Grade X CBSE Mathematics.',
       '95/100 score in English Language & Literature.',
-      'Starting player for CBSE Cluster national-level football representation.'
+      'National cluster-level representation in CBSE football tournament.'
     ]
   }
 ];

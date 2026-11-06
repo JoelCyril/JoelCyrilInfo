@@ -2,6 +2,24 @@ import { Award } from '../types';
 
 export const AWARDS: Award[] = [
   {
+    id: 'robotics-club-secretary',
+    title: 'ADIS Robotics Club Secretary',
+    rank: 'Elected Club Secretary (3-Year Member)',
+    date: '2023 – Present',
+    category: 'Leadership',
+    organization: 'Abu Dhabi Indian School Robotics Club',
+    description: 'Serving as elected Secretary after 3 consecutive years in the club—managing technical workshops, member mentorship, equipment inventories, and robotics competition teams.'
+  },
+  {
+    id: 'adek-cup-varsity',
+    title: 'ADEK Cup Football Championship',
+    rank: 'Male Varsity Team (2-Year Campaign · Ongoing)',
+    date: '2024 – Present',
+    category: 'Sports',
+    organization: 'Abu Dhabi Dept. of Education and Knowledge (ADEK)',
+    description: 'Selected for the ADIS Male Varsity Football Team representing the school in the prestigious ADEK Cup across two consecutive seasons, with the current 2025–26 campaign actively underway.'
+  },
+  {
     id: 'fll-robot-game',
     title: 'FIRST LEGO League — Robot Game',
     rank: 'First Runner-Up',
@@ -10,6 +28,15 @@ export const AWARDS: Award[] = [
     organization: 'FLL UNEARTHED · Abu Dhabi Regional',
     description: 'Served as Team Captain leading autonomous robot missions, EV3/SPIKE programming, gear ratio optimization, and precision attachment engineering.',
     photoId: 4
+  },
+  {
+    id: 'mun-delegate',
+    title: 'Model United Nations (MUN)',
+    rank: 'Committee Delegate',
+    date: '2024–25',
+    category: 'Leadership',
+    organization: 'Model United Nations Conference',
+    description: 'Represented assigned country delegation in formal committee debates, geopolitical negotiations, and multilateral draft resolution authorship.'
   },
   {
     id: 'curtin-stem',

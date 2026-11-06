@@ -31,8 +31,8 @@ export const About: React.FC = () => {
     },
     {
       icon: <Users className="w-5 h-5 text-pink-400" />,
-      title: 'Leadership & Teamwork',
-      description: 'Team Captain in the FIRST LEGO League leading robot game missions to 1st Runner-Up, and starting player representing the school in national CBSE football.'
+      title: 'Leadership & Athletics',
+      description: '3-year Robotics Club Secretary & FLL Team Captain (1st Runner-Up), 2-year ADEK Cup Male Varsity football player (current 2025–26 campaign active), CBSE Cluster football representation, and Model United Nations (MUN) delegate.'
     }
   ];
 
@@ -93,16 +93,16 @@ export const About: React.FC = () => {
             <p className="text-xs font-mono text-slate-400 uppercase tracking-wider">Engineered Projects</p>
           </div>
           <div className="p-4 border-r border-white/[0.06] last:border-0">
-            <p className="text-3xl sm:text-4xl font-extrabold text-cyan-400 font-display mb-1">05</p>
-            <p className="text-xs font-mono text-slate-400 uppercase tracking-wider">RF &amp; Hardware Protocols</p>
+            <p className="text-3xl sm:text-4xl font-extrabold text-cyan-400 font-display mb-1">03 Yrs</p>
+            <p className="text-xs font-mono text-slate-400 uppercase tracking-wider">Robotics Club Secretary</p>
           </div>
           <div className="p-4 border-r border-white/[0.06] last:border-0">
-            <p className="text-3xl sm:text-4xl font-extrabold text-emerald-400 font-display mb-1">TOP 12</p>
-            <p className="text-xs font-mono text-slate-400 uppercase tracking-wider">Curtin STEM University</p>
+            <p className="text-3xl sm:text-4xl font-extrabold text-emerald-400 font-display mb-1">02 Yrs</p>
+            <p className="text-xs font-mono text-slate-400 uppercase tracking-wider">ADEK Varsity Football</p>
           </div>
           <div className="p-4">
-            <p className="text-3xl sm:text-4xl font-extrabold text-amber-400 font-display mb-1">02</p>
-            <p className="text-xs font-mono text-slate-400 uppercase tracking-wider">Podium STEM Results</p>
+            <p className="text-3xl sm:text-4xl font-extrabold text-amber-400 font-display mb-1">TOP 12</p>
+            <p className="text-xs font-mono text-slate-400 uppercase tracking-wider">Curtin STEM University</p>
           </div>
         </div>
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowDown, Github, FileText, Send, MapPin, Terminal, Cpu } from 'lucide-react';
+import { ArrowDown, Github, FileText, Send, MapPin, Terminal, Cpu, Users } from 'lucide-react';
 
 interface HeroProps {
   onOpenResume: () => void;
@@ -87,7 +87,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
             </div>
 
             {/* Meta Proof Points */}
-            <div className="pt-6 border-t border-white/[0.08] grid grid-cols-2 sm:grid-cols-3 gap-4 max-w-xl text-xs font-mono text-slate-400">
+            <div className="pt-6 border-t border-white/[0.08] grid grid-cols-2 sm:grid-cols-4 gap-3.5 max-w-2xl text-xs font-mono text-slate-400">
               <div className="flex items-center gap-2">
                 <MapPin className="w-3.5 h-3.5 text-[#ff5d35]" />
                 <span>Abu Dhabi, UAE</span>
@@ -96,9 +96,13 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
                 <Terminal className="w-3.5 h-3.5 text-cyan-400" />
                 <span>Grade XII · CBSE</span>
               </div>
-              <div className="flex items-center gap-2 col-span-2 sm:col-span-1">
+              <div className="flex items-center gap-2">
                 <Cpu className="w-3.5 h-3.5 text-emerald-400" />
-                <span>FLL Team Captain</span>
+                <span>Robotics Club Sec.</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Users className="w-3.5 h-3.5 text-amber-400" />
+                <span>ADEK Varsity Player</span>
               </div>
             </div>
           </motion.div>

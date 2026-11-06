@@ -199,16 +199,28 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
               </div>
             </div>
 
-            {/* Competitions & Awards */}
+            {/* Competitions, Leadership & Athletics */}
             <div>
               <h2 className="text-xs font-mono uppercase tracking-widest text-[#ff5d35] font-bold mb-3 flex items-center gap-2">
                 <Award className="w-4 h-4" />
-                <span>Honors &amp; Distinctions</span>
+                <span>Honors, Leadership &amp; Athletics</span>
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs">
                 <div className="p-2.5 rounded-lg bg-white/[0.02] border border-white/[0.05]">
+                  <span className="font-bold text-white block">ADIS Robotics Club Secretary</span>
+                  <span className="text-slate-400 font-mono">Elected Secretary · 3-Year Active Member · 2023–Present</span>
+                </div>
+                <div className="p-2.5 rounded-lg bg-white/[0.02] border border-white/[0.05]">
+                  <span className="font-bold text-white block">ADEK Cup Football — Male Varsity Team</span>
+                  <span className="text-slate-400 font-mono">2-Year Player · 2025–26 Campaign Ongoing</span>
+                </div>
+                <div className="p-2.5 rounded-lg bg-white/[0.02] border border-white/[0.05]">
                   <span className="font-bold text-white block">FIRST LEGO League — Robot Game</span>
                   <span className="text-slate-400 font-mono">Team Captain &middot; First Runner-Up · 2025–26</span>
+                </div>
+                <div className="p-2.5 rounded-lg bg-white/[0.02] border border-white/[0.05]">
+                  <span className="font-bold text-white block">Model United Nations (MUN)</span>
+                  <span className="text-slate-400 font-mono">Official Committee Delegate · 2024–25</span>
                 </div>
                 <div className="p-2.5 rounded-lg bg-white/[0.02] border border-white/[0.05]">
                   <span className="font-bold text-white block">Curtin University STEM Challenge</span>
