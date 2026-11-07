@@ -8,8 +8,11 @@ export const PROJECTS: Project[] = [
     category: 'Full-Stack Web & Systems',
     status: 'Working App',
     featured: true,
-    image: '/assets/projects/swap-live-app.png',
-    galleryImages: ['/assets/projects/swap-live-app.png', '/assets/projects/swap-hero.png', '/assets/projects/swap-logo.png', '/assets/projects/nas-hardware.png'],
+    image: '/assets/projects/swap-browse-live.jpg',
+    galleryImages: [
+      '/assets/projects/swap-browse-live.jpg',
+      '/assets/projects/swap-analytics-live.jpg'
+    ],
     description: 'A peer-to-peer barter marketplace built and launched across the UAE enabling students and community members to exchange goods without money.',
     longDescription: 'SwapUAE is a cashless trading platform designed to help students and residents circulate books, electronics, and supplies without financial barriers. Within two weeks of launch with zero paid marketing, the platform attracted 100+ active users and completed 12+ verified trades. When rapid adoption exceeded free cloud tiers, our engineering team migrated backend persistence to a custom scrap-built NAS server.',
     problem: 'Students own valuable unused equipment and textbooks, but lack cash to buy new essentials. Commercial classifieds involve fees, scams, or monetary overhead.',
@@ -113,8 +116,11 @@ export const PROJECTS: Project[] = [
     category: 'AI & Healthcare Technology',
     status: 'Award-Winning',
     featured: true,
-    image: '/assets/projects/pulso-live-dashboard.png',
-    galleryImages: ['/assets/projects/pulso-live-dashboard.png', '/assets/projects/pulso-dashboard.jpg', '/assets/projects/pulso-anatomy.png'],
+    image: '/assets/projects/pulso-landing-live.jpg',
+    galleryImages: [
+      '/assets/projects/pulso-landing-live.jpg',
+      '/assets/projects/pulso-chat-analysis-live.jpg'
+    ],
     description: 'An AI health and wellness platform addressing UN Sustainable Development Goal 3 by synthesizing fragmented lifestyle telemetry into predictive wellness insights.',
     longDescription: 'Pulso.ai is an award-winning web application that empowers individuals to understand the holistic interplay between sleep architecture, physical activity, heart rate variance, and dietary habits. Built with TypeScript and Vite, the platform generates personalized risk-factor insights and visualizes health trajectory projections using interactive data dashboards.',
     problem: 'Health data is siloed across disparate apps and wearable devices, presenting raw numbers without contextualized guidance or early warning patterns.',
