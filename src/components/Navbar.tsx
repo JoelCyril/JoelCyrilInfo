@@ -1,15 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, FileText, Moon, Sun, ArrowUpRight } from 'lucide-react';
+import { Menu, X, Download, Moon, Sun, ArrowUpRight } from 'lucide-react';
 
 interface NavbarProps {
-  onOpenResume: () => void;
   isDarkMode: boolean;
   onToggleTheme: () => void;
 }
 
 export const Navbar: React.FC<NavbarProps> = ({
-  onOpenResume,
   isDarkMode,
   onToggleTheme
 }) => {
@@ -110,15 +108,17 @@ export const Navbar: React.FC<NavbarProps> = ({
             {isDarkMode ? <Sun className="w-4 h-4 text-amber-400" /> : <Moon className="w-4 h-4 text-slate-200" />}
           </button>
 
-          {/* Resume CTA */}
-          <button
-            onClick={onOpenResume}
+          {/* Resume Download CTA */}
+          <a
+            href="/Joel_Cyril_Resume.pdf"
+            download="Joel_Cyril_Resume.pdf"
             className="flex items-center gap-2 px-4 py-2 text-xs font-semibold rounded-full bg-gradient-to-r from-[#ff5d35] to-[#f97316] text-white hover:brightness-110 shadow-[0_0_20px_-3px_rgba(255,93,53,0.4)] transition-all hover:scale-[1.02] active:scale-[0.98]"
+            title="Download ATS Compliant CV (PDF)"
           >
-            <FileText className="w-3.5 h-3.5" />
-            <span>Resume</span>
+            <Download className="w-3.5 h-3.5" />
+            <span>Download CV</span>
             <ArrowUpRight className="w-3 h-3 opacity-80" />
-          </button>
+          </a>
         </div>
 
         {/* Mobile Hamburger Button */}
@@ -161,16 +161,15 @@ export const Navbar: React.FC<NavbarProps> = ({
                 </a>
               ))}
               <div className="pt-3 border-t border-white/[0.08] flex flex-col gap-2">
-                <button
-                  onClick={() => {
-                    setMobileMenuOpen(false);
-                    onOpenResume();
-                  }}
-                  className="flex items-center justify-center gap-2 w-full py-3 text-sm font-semibold rounded-xl bg-gradient-to-r from-[#ff5d35] to-[#f97316] text-white"
+                <a
+                  href="/Joel_Cyril_Resume.pdf"
+                  download="Joel_Cyril_Resume.pdf"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="flex items-center justify-center gap-2 w-full py-3 text-sm font-semibold rounded-xl bg-gradient-to-r from-[#ff5d35] to-[#f97316] text-white shadow-md shadow-[#ff5d35]/25"
                 >
-                  <FileText className="w-4 h-4" />
-                  <span>View Resume</span>
-                </button>
+                  <Download className="w-4 h-4" />
+                  <span>Download CV (PDF)</span>
+                </a>
               </div>
             </div>
           </motion.div>

@@ -1,12 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowDown, Github, FileText, Send, MapPin, Cpu, Users, Award } from 'lucide-react';
+import { ArrowDown, Github, Download, Send, MapPin, Cpu, Users, Award } from 'lucide-react';
 
 interface HeroProps {
-  onOpenResume: () => void;
+  onOpenResume?: () => void;
 }
 
-export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
+export const Hero: React.FC<HeroProps> = () => {
   return (
     <section id="top" className="relative min-h-[92vh] flex items-center pt-28 pb-16 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
@@ -71,13 +71,15 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
                 <ArrowDown className="w-4 h-4 animate-bounce" />
               </a>
 
-              <button
-                onClick={onOpenResume}
+              <a
+                href="/Joel_Cyril_Resume.pdf"
+                download="Joel_Cyril_Resume.pdf"
                 className="inline-flex items-center gap-2 px-5 py-3.5 rounded-full bg-white/[0.05] hover:bg-white/[0.1] border border-white/[0.12] text-white font-semibold text-sm hover:scale-[1.02] active:scale-[0.98] transition-all"
+                title="Download ATS Compliant CV (PDF)"
               >
-                <FileText className="w-4 h-4 text-[#ff5d35]" />
-                <span>Resume / CV</span>
-              </button>
+                <Download className="w-4 h-4 text-[#ff5d35]" />
+                <span>Download CV</span>
+              </a>
 
               <a
                 href="#contact"

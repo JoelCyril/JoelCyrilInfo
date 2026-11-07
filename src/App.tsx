@@ -12,11 +12,9 @@ import { CertificatesGallery } from './components/CertificatesGallery';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { LightboxModal } from './components/LightboxModal';
-import { ResumeModal } from './components/ResumeModal';
 
 export const App: React.FC = () => {
   const [activePhotoId, setActivePhotoId] = useState<number | null>(null);
-  const [isResumeOpen, setIsResumeOpen] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(true);
 
   // Sync dark class on html root
@@ -42,14 +40,13 @@ export const App: React.FC = () => {
 
       {/* Sticky Navigation */}
       <Navbar
-        onOpenResume={() => setIsResumeOpen(true)}
         isDarkMode={isDarkMode}
         onToggleTheme={() => setIsDarkMode(!isDarkMode)}
       />
 
       {/* Main Sections */}
       <main className="relative z-10">
-        <Hero onOpenResume={() => setIsResumeOpen(true)} />
+        <Hero />
         <About />
         <Projects />
         <Skills />
@@ -67,12 +64,6 @@ export const App: React.FC = () => {
         activeId={activePhotoId}
         onClose={() => setActivePhotoId(null)}
         onSelectId={(id) => setActivePhotoId(id)}
-      />
-
-      {/* Interactive Resume & Curriculum Vitae Modal */}
-      <ResumeModal
-        isOpen={isResumeOpen}
-        onClose={() => setIsResumeOpen(false)}
       />
     </div>
   );
