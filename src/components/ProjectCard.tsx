@@ -80,7 +80,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onSelect, ind
         <div>
           {/* Project Thumbnail Image */}
           <div
-            className="w-full h-44 sm:h-48 relative rounded-xl overflow-hidden bg-[#12101a] border border-white/[0.08] cursor-pointer mb-4 shrink-0"
+            className="w-full h-44 sm:h-48 relative rounded-xl overflow-hidden bg-[#12101a] border border-white/[0.08] light:border-slate-200 cursor-pointer mb-4 shrink-0 project-thumbnail-card"
             onClick={() => onSelect(project)}
           >
             <img
@@ -108,7 +108,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onSelect, ind
                     <span>Featured</span>
                   </span>
                 )}
-                <span className="px-2 py-0.5 rounded-full text-[10px] font-mono bg-black/60 backdrop-blur-md text-slate-300 border border-white/[0.1] max-w-[120px] truncate hidden sm:inline-block">
+                <span className="px-2 py-0.5 rounded-full text-[10px] font-mono bg-black/60 backdrop-blur-md text-slate-200 border border-white/[0.1] max-w-[120px] truncate hidden sm:inline-block">
                   {project.category}
                 </span>
               </div>
@@ -132,16 +132,16 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onSelect, ind
 
           {/* Title & Subtitle */}
           <div className="mb-2">
-            <h3 className="text-lg sm:text-xl font-bold text-white tracking-tight group-hover:text-[#ff7e5d] transition-colors flex items-center justify-between">
+            <h3 className="text-lg sm:text-xl font-bold text-white light:text-slate-900 tracking-tight group-hover:text-[#ff7e5d] transition-colors flex items-center justify-between">
               <span className="truncate">{project.title}</span>
             </h3>
-            <p className="text-[11px] font-mono text-cyan-400 mt-0.5 uppercase tracking-wider truncate">
+            <p className="text-[11px] font-mono text-cyan-400 light:text-cyan-700 mt-0.5 uppercase tracking-wider truncate font-semibold">
               {project.subtitle}
             </p>
           </div>
 
           {/* Description (3 lines max for visual consistency) */}
-          <p className="text-xs sm:text-sm text-slate-300 leading-relaxed font-normal mb-3.5 line-clamp-3">
+          <p className="text-xs sm:text-sm text-slate-300 light:text-slate-600 leading-relaxed font-normal mb-3.5 line-clamp-3">
             {project.description}
           </p>
 
@@ -150,13 +150,13 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onSelect, ind
             {project.technologies.slice(0, 3).map((tech) => (
               <span
                 key={tech}
-                className="px-2 py-0.5 text-[11px] font-mono rounded-md bg-white/[0.04] text-slate-300 border border-white/[0.08]"
+                className="px-2 py-0.5 text-[11px] font-mono rounded-md bg-white/[0.04] light:bg-slate-100 text-slate-300 light:text-slate-700 border border-white/[0.08] light:border-slate-200"
               >
                 {tech}
               </span>
             ))}
             {project.technologies.length > 3 && (
-              <span className="px-1.5 py-0.5 text-[10px] font-mono rounded-md bg-white/[0.02] text-slate-400">
+              <span className="px-1.5 py-0.5 text-[10px] font-mono rounded-md bg-white/[0.02] light:bg-slate-100 text-slate-400 light:text-slate-500">
                 +{project.technologies.length - 3}
               </span>
             )}
@@ -164,10 +164,10 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onSelect, ind
         </div>
 
         {/* Action Row at Bottom */}
-        <div className="pt-3 border-t border-white/[0.08] flex items-center justify-between gap-2 mt-auto">
+        <div className="pt-3 border-t border-white/[0.08] light:border-slate-200 flex items-center justify-between gap-2 mt-auto">
           <button
             onClick={() => onSelect(project)}
-            className="inline-flex items-center gap-1 text-xs font-semibold text-white hover:text-[#ff5d35] transition-colors"
+            className="inline-flex items-center gap-1 text-xs font-semibold text-white light:text-slate-900 hover:text-[#ff5d35] light:hover:text-[#ff5d35] transition-colors"
           >
             <span>Case Study</span>
             <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
@@ -180,7 +180,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onSelect, ind
                 href={link.url}
                 target={link.url.startsWith('http') ? '_blank' : '_self'}
                 rel="noopener noreferrer"
-                className="px-2.5 py-1 rounded-lg bg-white/[0.05] hover:bg-white/[0.12] border border-white/[0.1] text-slate-300 hover:text-white transition-all text-xs font-mono flex items-center gap-1"
+                className="px-2.5 py-1 rounded-lg bg-white/[0.05] light:bg-slate-100 hover:bg-white/[0.12] light:hover:bg-slate-200 border border-white/[0.1] light:border-slate-200 text-slate-300 light:text-slate-700 hover:text-white light:hover:text-slate-900 transition-all text-xs font-mono flex items-center gap-1"
                 title={link.label}
                 aria-label={`${project.title} - ${link.label}`}
               >

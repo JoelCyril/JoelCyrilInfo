@@ -2,6 +2,19 @@ import { ExperienceItem } from '../types';
 
 export const EXPERIENCES: ExperienceItem[] = [
   {
+    period: 'ACADEMIC DISTINCTION',
+    role: 'Grade XII CS Scholar · 100/100 Perfect Score in Mathematics',
+    organization: 'Abu Dhabi Indian School (ADIS)',
+    location: 'Abu Dhabi, UAE',
+    badge: '★ 100/100 Math Centum Score',
+    description: 'Demonstrating elite mathematical and analytical mastery, achieving a perfect 100/100 Centum score in CBSE Class X Board Examinations, alongside 95/100 in English. Currently preparing for undergraduate Computer Engineering with concentration in CS, Physics, and Higher Mathematics.',
+    highlights: [
+      '★ 100/100 Perfect Score (Centum) in CBSE Class X Mathematics Board Examination.',
+      '95/100 in English Language & Literature, combining analytical depth with articulate technical communication.',
+      'Varsity starter representing ADIS at the national-level CBSE Cluster football tournament.'
+    ]
+  },
+  {
     period: '2023 – PRESENT',
     role: 'Secretary · ADIS Robotics Club (3-Year Member)',
     organization: 'Abu Dhabi Indian School (ADIS)',
@@ -75,19 +88,6 @@ export const EXPERIENCES: ExperienceItem[] = [
     highlights: [
       'Mastered analog signal filtering and digital system architectures.',
       'Directly applied knowledge to custom hardware builds (Reaper One and Buoy sensor interfaces).'
-    ]
-  },
-  {
-    period: 'CURRENT',
-    role: 'Grade XII · Computer Science Scholar',
-    organization: 'Abu Dhabi Indian School (ADIS)',
-    location: 'Abu Dhabi, UAE',
-    badge: 'CBSE Curriculum',
-    description: 'Excelling in high school studies with concentration in Computer Science, Mathematics, and Physics, preparing for undergraduate degrees in Computer Engineering.',
-    highlights: [
-      'Perfect 100/100 score in Grade X CBSE Mathematics.',
-      '95/100 score in English Language & Literature.',
-      'National cluster-level representation in CBSE football tournament.'
     ]
   }
 ];

@@ -31,7 +31,9 @@ export const App: React.FC = () => {
   }, [isDarkMode]);
 
   return (
-    <div className="relative min-h-screen text-slate-100 bg-[#09090b] selection:bg-[#ff5d35]/30 selection:text-white">
+    <div className={`relative min-h-screen selection:bg-[#ff5d35]/30 selection:text-white transition-colors duration-300 ${
+      isDarkMode ? 'bg-[#09090b] text-slate-100' : 'bg-[#f8fafc] text-slate-900'
+    }`}>
       {/* Interactive Constellation Particle Canvas */}
       <ConstellationBackground accentColor="#ff5d35" />
 

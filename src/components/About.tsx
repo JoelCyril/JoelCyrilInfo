@@ -87,22 +87,26 @@ export const About: React.FC = () => {
         </div>
 
         {/* Stats Row */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 p-6 rounded-2xl glass-panel border border-white/[0.08]">
-          <div className="p-4 border-r border-white/[0.06] last:border-0">
-            <p className="text-3xl sm:text-4xl font-extrabold text-[#ff5d35] font-display mb-1">07+</p>
-            <p className="text-xs font-mono text-slate-400 uppercase tracking-wider">Engineered Projects</p>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 p-6 rounded-2xl glass-panel border border-white/[0.08] light:border-slate-200">
+          <div className="p-4 border-r border-white/[0.06] light:border-slate-200">
+            <p className="text-3xl sm:text-4xl font-extrabold text-amber-400 font-display mb-1">100/100</p>
+            <p className="text-xs font-mono text-slate-400 light:text-slate-600 uppercase tracking-wider font-semibold">CBSE Math Centum</p>
           </div>
-          <div className="p-4 border-r border-white/[0.06] last:border-0">
+          <div className="p-4 border-r border-white/[0.06] light:border-slate-200">
+            <p className="text-3xl sm:text-4xl font-extrabold text-[#ff5d35] font-display mb-1">2,000+</p>
+            <p className="text-xs font-mono text-slate-400 light:text-slate-600 uppercase tracking-wider">ADIS ReadTrack Users</p>
+          </div>
+          <div className="p-4 border-r border-white/[0.06] light:border-slate-200">
             <p className="text-3xl sm:text-4xl font-extrabold text-cyan-400 font-display mb-1">03 Yrs</p>
-            <p className="text-xs font-mono text-slate-400 uppercase tracking-wider">Robotics Club Secretary</p>
+            <p className="text-xs font-mono text-slate-400 light:text-slate-600 uppercase tracking-wider">Robotics Club Secretary</p>
           </div>
-          <div className="p-4 border-r border-white/[0.06] last:border-0">
+          <div className="p-4 border-r border-white/[0.06] light:border-slate-200">
             <p className="text-3xl sm:text-4xl font-extrabold text-emerald-400 font-display mb-1">02 Yrs</p>
-            <p className="text-xs font-mono text-slate-400 uppercase tracking-wider">ADEK Varsity Football</p>
+            <p className="text-xs font-mono text-slate-400 light:text-slate-600 uppercase tracking-wider">ADEK Varsity Football</p>
           </div>
           <div className="p-4">
-            <p className="text-3xl sm:text-4xl font-extrabold text-amber-400 font-display mb-1">TOP 12</p>
-            <p className="text-xs font-mono text-slate-400 uppercase tracking-wider">Curtin STEM University</p>
+            <p className="text-3xl sm:text-4xl font-extrabold text-pink-400 font-display mb-1">07+</p>
+            <p className="text-xs font-mono text-slate-400 light:text-slate-600 uppercase tracking-wider">Engineered Projects</p>
           </div>
         </div>
 

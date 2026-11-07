@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowDown, Github, FileText, Send, MapPin, Terminal, Cpu, Users } from 'lucide-react';
+import { ArrowDown, Github, FileText, Send, MapPin, Cpu, Users, Award } from 'lucide-react';
 
 interface HeroProps {
   onOpenResume: () => void;
@@ -19,19 +19,31 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             className="lg:col-span-7 flex flex-col justify-center"
           >
-            {/* Status Pill */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.2, duration: 0.5 }}
-              className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-white/[0.04] border border-white/[0.1] text-xs font-mono text-slate-300 w-fit mb-6 shadow-sm"
-            >
-              <span className="flex h-2 w-2 relative">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#10b981] opacity-75" />
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-[#10b981]" />
-              </span>
-              <span>HARDWARE × SOFTWARE × AUTONOMOUS SYSTEMS</span>
-            </motion.div>
+            {/* Status Pills */}
+            <div className="flex flex-wrap items-center gap-2 mb-6">
+              <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: 0.2, duration: 0.5 }}
+                className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-white/[0.04] border border-white/[0.1] text-xs font-mono text-slate-300 shadow-sm"
+              >
+                <span className="flex h-2 w-2 relative">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#10b981] opacity-75" />
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-[#10b981]" />
+                </span>
+                <span>HARDWARE × SOFTWARE × AUTONOMOUS SYSTEMS</span>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: 0.3, duration: 0.5 }}
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-amber-500/15 border border-amber-500/35 text-xs font-mono font-semibold text-amber-300 shadow-sm"
+              >
+                <Award className="w-3.5 h-3.5 text-amber-400" />
+                <span>100/100 CBSE Math Centum</span>
+              </motion.div>
+            </div>
 
             {/* Main Headline */}
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white mb-6 leading-[1.05]">
@@ -93,8 +105,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
                 <span>Abu Dhabi, UAE</span>
               </div>
               <div className="flex items-center gap-2">
-                <Terminal className="w-3.5 h-3.5 text-cyan-400" />
-                <span>Grade XII · CBSE</span>
+                <Award className="w-3.5 h-3.5 text-amber-400" />
+                <span className="font-semibold text-amber-400 light:text-amber-600">100/100 Math · Grade XII</span>
               </div>
               <div className="flex items-center gap-2">
                 <Cpu className="w-3.5 h-3.5 text-emerald-400" />
