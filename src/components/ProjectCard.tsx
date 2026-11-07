@@ -80,19 +80,28 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onSelect, ind
         <div>
           {/* Project Thumbnail Image */}
           <div
-            className="w-full h-44 sm:h-48 relative rounded-xl overflow-hidden bg-[#12101a] border border-white/[0.08] light:border-slate-200 cursor-pointer mb-4 shrink-0 project-thumbnail-card"
+            className="w-full h-48 sm:h-52 relative rounded-xl overflow-hidden bg-[#0a0910] light:bg-slate-100 border border-white/[0.08] light:border-slate-200 cursor-pointer mb-4 shrink-0 project-thumbnail-card flex items-center justify-center p-2"
             onClick={() => onSelect(project)}
           >
+            {/* Ambient Blurred Background to maintain aspect ratio without harsh margins */}
+            <div
+              className="absolute inset-0 bg-cover bg-center filter blur-xl opacity-30 dark:opacity-20 scale-125 pointer-events-none"
+              style={{ backgroundImage: `url(${project.image})` }}
+            />
+
+            {/* Exact Uncropped Image at Original Aspect Ratio */}
             <img
               src={project.image}
               alt={project.title}
-              className="w-full h-full object-cover object-center filter brightness-[0.95] group-hover:brightness-105 group-hover:scale-105 transition-all duration-700"
+              className="relative z-10 max-h-full max-w-full object-contain object-center filter brightness-[0.98] group-hover:scale-[1.03] transition-transform duration-500 rounded-lg shadow-sm"
               loading="lazy"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#09090b]/90 via-[#09090b]/25 to-transparent" />
+
+            {/* Subtle Top & Bottom Vignettes */}
+            <div className="absolute inset-x-0 top-0 h-12 bg-gradient-to-b from-[#09090b]/70 to-transparent pointer-events-none z-10" />
 
             {/* Badges Overlay */}
-            <div className="absolute top-2.5 left-2.5 right-2.5 flex items-center justify-between gap-1.5">
+            <div className="absolute top-2.5 left-2.5 right-2.5 flex items-center justify-between gap-1.5 z-20">
               <span
                 className={`px-2.5 py-0.5 rounded-full text-[10px] font-mono font-semibold border backdrop-blur-md ${getStatusBadge(
                   project.status
@@ -116,11 +125,11 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onSelect, ind
 
             {/* Key Metrics Overlay Pills */}
             {project.metrics && project.metrics.length > 0 && (
-              <div className="absolute bottom-2.5 left-2.5 right-2.5 flex flex-wrap gap-1.5">
+              <div className="absolute bottom-2 left-2 right-2 flex flex-wrap gap-1.5 z-20">
                 {project.metrics.slice(0, 2).map((metric) => (
                   <div
                     key={metric.label}
-                    className="px-2 py-0.5 rounded-md bg-[#09090b]/85 backdrop-blur-md border border-white/[0.1] text-[10px] font-mono flex items-center gap-1"
+                    className="px-2 py-0.5 rounded-md bg-[#09090b]/90 backdrop-blur-md border border-white/[0.12] text-[10px] font-mono flex items-center gap-1 shadow-sm"
                   >
                     <span className="text-slate-400">{metric.label}:</span>
                     <span className="text-white font-bold">{metric.value}</span>

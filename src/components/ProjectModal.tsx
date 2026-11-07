@@ -84,30 +84,41 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
               </h2>
             </div>
 
-            {/* Hero Visual Preview */}
-            <div className="space-y-2">
-              <div className="relative rounded-xl sm:rounded-2xl overflow-hidden bg-[#0a090e] border border-white/[0.08] light:border-slate-200 h-52 sm:h-64 md:h-72 w-full flex items-center justify-center">
+            {/* Hero Visual Preview - Keeps authentic aspect ratio without cropping */}
+            <div className="space-y-2.5">
+              <div className="relative rounded-xl sm:rounded-2xl overflow-hidden bg-[#07060b] light:bg-slate-100 border border-white/[0.08] light:border-slate-200 h-64 sm:h-80 md:h-[390px] w-full flex items-center justify-center p-2.5 sm:p-3">
+                {/* Ambient Blurred Backdrop to fill space organically */}
+                <div
+                  className="absolute inset-0 bg-cover bg-center filter blur-2xl opacity-25 dark:opacity-20 scale-125 pointer-events-none"
+                  style={{ backgroundImage: `url(${activeImage || project.image})` }}
+                />
+
+                {/* Natural Aspect Ratio Uncropped Screenshot */}
                 <img
                   src={activeImage || project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover object-top"
+                  className="relative z-10 max-h-full max-w-full object-contain object-center rounded-lg shadow-2xl transition-all duration-300"
                 />
               </div>
 
               {/* Gallery Image switcher thumbnails if multiple exist */}
               {project.galleryImages && project.galleryImages.length > 1 && (
-                <div className="flex items-center gap-2 overflow-x-auto py-1">
+                <div className="flex items-center gap-2 overflow-x-auto py-1.5 px-0.5">
                   {project.galleryImages.map((img, idx) => (
                     <button
                       key={idx}
                       onClick={() => setActiveImage(img)}
-                      className={`relative w-16 h-12 rounded-lg overflow-hidden border shrink-0 transition-all ${
+                      className={`relative w-20 h-14 rounded-lg overflow-hidden border shrink-0 transition-all p-0.5 bg-[#0a090e] light:bg-slate-200 flex items-center justify-center ${
                         (activeImage || project.image) === img
-                          ? 'border-[#ff5d35] ring-2 ring-[#ff5d35]/30 scale-105'
-                          : 'border-white/[0.1] opacity-70 hover:opacity-100'
+                          ? 'border-[#ff5d35] ring-2 ring-[#ff5d35]/40 scale-105'
+                          : 'border-white/[0.12] light:border-slate-300 opacity-60 hover:opacity-100'
                       }`}
                     >
-                      <img src={img} alt={`${project.title} preview ${idx + 1}`} className="w-full h-full object-cover object-top" />
+                      <img
+                        src={img}
+                        alt={`${project.title} preview ${idx + 1}`}
+                        className="w-full h-full object-contain rounded"
+                      />
                     </button>
                   ))}
                 </div>
