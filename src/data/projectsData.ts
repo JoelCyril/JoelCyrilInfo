@@ -2,6 +2,36 @@ import { Project } from '../types';
 
 export const PROJECTS: Project[] = [
   {
+    id: 'adis-readtrack',
+    title: 'ADIS ReadTrack',
+    subtitle: 'AI-Powered Literacy & Reading Assessment Intelligence',
+    category: 'AI & Educational Tech',
+    status: 'Working App',
+    featured: true,
+    image: '/assets/projects/readtrack-onboarding.png',
+    galleryImages: [
+      '/assets/projects/readtrack-onboarding.png',
+      '/assets/projects/readtrack-standings.jpg',
+      '/assets/projects/readtrack-stages.png'
+    ],
+    description: 'An AI-powered school reading activity and literacy assessment portal serving ~2,000 Abu Dhabi Indian School students, engineered in direct consultation with the high school English department to boost reading scores and eliminate teacher grading stress through automated AI analysis.',
+    longDescription: 'ADIS ReadTrack was engineered to solve a systemic operational challenge in school-wide literacy programs: English teachers faced severe grading stress reviewing manual paper reading logs across thousands of students, while students lacked objective feedback on their reading habits. In close consultation with all high school English teachers, I designed an intelligent web platform that combines camera OCR student ID card onboarding, automated reading pace benchmarks, and AI comprehension quizzes. The platform tracks weekly class PISA standings against ADEK benchmarks (480+ target), gamifying reading with real school rewards (like bonus PT games periods for top classes). Currently deployed across Abu Dhabi Indian School, ReadTrack supports nearly 2,000 active student users, freeing teachers from manual log verification and measurably increasing student reading scores.',
+    problem: 'English teachers spent hundreds of hours manually verifying physical reading logs, creating immense grading stress, while paper logs allowed unverified claims without actionable comprehension data.',
+    solution: 'Consulted with the entire school English faculty to engineer a full-stack platform with OCR student card validation, automated AI summary evaluation, and ADEK-aligned reading leaderboards, currently serving ~2,000 students.',
+    technologies: ['React 19', 'TypeScript', 'Supabase', 'PostgreSQL', 'Tesseract OCR', 'Tailwind CSS', 'Vite', 'AI APIs'],
+    tags: ['React', 'TypeScript', 'OCR', 'Supabase', 'AI / EdTech'],
+    metrics: [
+      { label: 'Active Students', value: '2,000+' },
+      { label: 'Faculty Impact', value: 'All English Teachers' },
+      { label: 'Grading Stress', value: '-75% Teacher Workload' },
+      { label: 'ADEK PISA Target', value: 'Exceeded (546 Pts)' }
+    ],
+    links: [
+      { label: 'GitHub Repository', url: 'https://github.com/JoelCyril/adis-readtrack', type: 'github' }
+    ],
+    accentColor: '#3b82f6'
+  },
+  {
     id: 'swap-uae',
     title: 'SwapUAE',
     subtitle: 'Community-Driven Zero-Cash Barter Marketplace',
@@ -82,32 +112,6 @@ export const PROJECTS: Project[] = [
       { label: 'System Overview', url: '#projects', type: 'docs' }
     ],
     accentColor: '#06b6d4'
-  },
-  {
-    id: 'adis-readtrack',
-    title: 'ADIS ReadTrack',
-    subtitle: 'AI-Powered Literacy & Reading Assessment Intelligence',
-    category: 'AI & Educational Tech',
-    status: 'Working App',
-    featured: true,
-    image: '/assets/projects/readtrack-live-portal.png',
-    galleryImages: ['/assets/projects/readtrack-live-portal.png', '/assets/projects/readtrack-logo.png'],
-    description: 'An AI-powered school reading activity and literacy assessment portal serving ~2,000 Abu Dhabi Indian School students, engineered in direct consultation with the high school English department to boost reading scores and eliminate teacher grading stress through automated AI analysis.',
-    longDescription: 'ADIS ReadTrack was engineered to solve a systemic operational challenge in school-wide literacy programs: English teachers faced severe grading stress reviewing manual paper reading logs across thousands of students, while students lacked objective feedback on their reading habits. In close consultation with all high school English teachers, I designed an intelligent web platform that combines camera OCR text verification, automated reading pace benchmarks, and AI comprehension quizzes. The platform automatically assesses student summaries, monitors reading milestones, and ranks inter-house literacy points. Currently deployed across Abu Dhabi Indian School, ReadTrack supports nearly 2,000 active student users, freeing teachers from manual log verification and measurably increasing student reading scores.',
-    problem: 'English teachers spent hundreds of hours manually verifying physical reading logs, creating immense grading stress, while paper logs allowed unverified claims without actionable comprehension data.',
-    solution: 'Consulted with the entire school English faculty to engineer a full-stack platform with OCR book validation, automated AI summary evaluation, and student reading leaderboards, currently serving ~2,000 students.',
-    technologies: ['React 19', 'TypeScript', 'Supabase', 'PostgreSQL', 'Tesseract OCR', 'Tailwind CSS', 'Vite', 'AI APIs'],
-    tags: ['React', 'TypeScript', 'OCR', 'Supabase', 'AI / EdTech'],
-    metrics: [
-      { label: 'Active Students', value: '2,000+' },
-      { label: 'Faculty Impact', value: 'All English Teachers' },
-      { label: 'Grading Stress', value: '-75% Teacher Workload' },
-      { label: 'AI Engine', value: 'Automated OCR & NLP' }
-    ],
-    links: [
-      { label: 'GitHub Repository', url: 'https://github.com/JoelCyril/adis-readtrack', type: 'github' }
-    ],
-    accentColor: '#3b82f6'
   },
   {
     id: 'pulso-ai',
