@@ -1,0 +1,85 @@
+JOEL THOMAS CYRIL
+Abu Dhabi, United Arab Emirates
+Email: joeltcyril@gmail.com | Phone: +971 50 148 4596
+GitHub: github.com/JoelCyril | Portfolio: joel-cyril-info.vercel.app
+
+================================================================================
+PROFESSIONAL SUMMARY
+================================================================================
+Aspiring Computer Engineering undergraduate with proven experience in embedded hardware systems (ESP32, STM32, LoRa, custom KiCAD PCBs), full-stack software development (React 19, TypeScript, Node.js, PostgreSQL), and applied AI systems. Track record of delivering high-impact solutions, including deploying an AI educational platform to 2,000+ active students, launching a zero-cost community web platform, captaining award-winning competitive robotics teams (FLL First Runner-Up), and maintaining elite academic rigor (100/100 CBSE Mathematics Centum score).
+
+================================================================================
+EDUCATION & ACADEMIC ACHIEVEMENTS
+================================================================================
+Abu Dhabi Indian School (ADIS) — Abu Dhabi, UAE
+Senior Secondary (Grade XII CBSE) | Focus: Computer Science, Mathematics, Physics
+Expected Completion: 2026
+
+Academic Honors & Distinction:
+• CBSE Class X Board Examination: 100/100 (Centum) in Mathematics
+• CBSE Class X Board Examination: 95/100 in English Language & Literature
+• Class 12-B Top Academic & Leadership Rank
+
+IIT Madras — Centre for Outreach & Digital Education (CODE)
+Course Certification: Introduction to Electronic Systems (8-Week Rigorous Program) | 2026
+• Completed comprehensive study of circuit theorems, operational amplifiers, semiconductor physics, signal conditioning filters, and digital logic micro-architectures.
+
+================================================================================
+TECHNICAL SKILLS
+================================================================================
+• Programming Languages: C, C++, Python, TypeScript, JavaScript, SQL, HTML5/CSS3
+• Embedded Systems & Hardware: ESP32, STM32 (STM32WLE5), LoRa (Sub-GHz CC1101), KiCAD (Schematic & PCB Layout), FreeRTOS, Brushless ESC Motors, PID Closed-Loop Control, I2C, SPI, UART, RS-485, NFC/RFID (PN532), Infrared TX/RX, 3D CAD (Fusion 360)
+• Web & Cloud Technologies: React 19, Node.js, FastAPI, PostgreSQL, Supabase, Tailwind CSS, Vite, WebSockets, Socket.io, RESTful APIs, Vercel, Cloudflare
+• Systems & Developer Tools: Linux (Ubuntu Server), Self-Hosted NAS Architecture, Git, GitHub, PlatformIO, Tesseract OCR, Docker basics, Data Visualization (Recharts)
+
+================================================================================
+FEATURED ENGINEERING PROJECTS
+================================================================================
+ADIS ReadTrack — AI-Powered Literacy & Reading Assessment Platform
+Lead Developer & System Architect | React 19, TypeScript, Supabase, PostgreSQL, Tesseract OCR
+• Consulted directly with the entire high school English teaching faculty to engineer and deploy a school-wide reading analytics portal currently serving 2,000+ active students at Abu Dhabi Indian School.
+• Integrated camera-based OCR verification for student ID onboarding and book summary analysis, eliminating manual paper reading log tracking and decreasing teacher grading workload by 75%.
+• Engineered automated comprehension quizzes and class-level PISA scaled reading score leaderboards aligned with ADEK targets (480+ benchmark), with Class 12-B achieving #1 standing (546 pts) and earning school-wide physical education reward privileges.
+
+SwapUAE — Community-Driven Zero-Cash Barter Marketplace
+Co-Founder & Full-Stack Systems Engineer | React 19, TypeScript, Node.js, PostgreSQL, WebSockets
+• Architected and launched a peer-to-peer cashless barter application across the UAE enabling students and community members to exchange books, electronics, and supplies without monetary transactions.
+• Achieved 100+ registered members, 110+ listings, and 12+ completed verified trades within two weeks of launch with $0.00 marketing budget.
+• Designed and built a dedicated self-hosted Linux NAS server using repurposed computer hardware to eliminate recurring cloud database costs, ensuring perpetual zero-cost community hosting.
+
+Reaper One — Multi-Protocol Handheld Hardware & RF Platform
+Hardware Engineer & Firmware Developer | ESP32, C++, FreeRTOS, KiCAD, Sub-GHz, NFC, Infrared
+• Engineered a standalone multi-protocol RF exploration device over 1.5 years of prototyping, integrating Sub-GHz radio (CC1101), NFC/RFID, IR transceivers, Wi-Fi, and Bluetooth LE into a single custom PCB.
+• Designed multi-layer KiCAD schematics and hand-soldered surface-mount components, multiplexing SPI, I2C, and GPIO lines within tight physical and power constraints.
+• Authored 100% custom asynchronous C++ firmware utilizing FreeRTOS tasks to drive a responsive menu-driven OLED display interface and real-time packet transmission.
+
+Pulso.ai — AI Healthcare Telemetry & Predictive Analytics
+Lead Developer | Award-Winning Project | React, TypeScript, Vite, Tailwind CSS, Recharts, AI APIs
+• Developed an award-winning web application addressing UN Sustainable Development Goal 3 (Good Health and Well-Being) by synthesizing fragmented health telemetry.
+• Processed user lifestyle parameters (sleep architecture, digital screen exposure, heart rate variance) to generate real-time health trajectory projections and actionable preventative insights.
+
+Manarat Al-Qurm (منارة القرم) — Smart Mangrove Preservative Buoy System
+IoT & Systems Engineer | STM32WLE5, Sub-GHz LoRa, C Firmware, Python (FastAPI), SQLite
+• Designed an autonomous floating environmental telemetry buoy powered by an ultra-low-power STM32WLE5 microcontroller for coastal mangrove conservation.
+• Transmitted 6-parameter Water Quality Indices (DO, pH, Salinity, Turbidity, Temp, Water Level) over long-range Sub-GHz LoRa to a local Raspberry Pi gateway with 48-hour predictive AI forecasting running 100% offline.
+
+================================================================================
+LEADERSHIP, COMPETITIONS & EXTRACURRICULAR INVOLVEMENT
+================================================================================
+• Elected Secretary — ADIS Robotics Club (2023 – Present)
+  Elected to executive leadership following 3 consecutive years of dedicated membership. Supervise weekly technical workshops, maintain lab equipment, and mentor junior students in EV3/SPIKE programming and mechanical prototyping.
+
+• Team Captain & Lead Engineer — FIRST LEGO League (UNEARTHED) (2025 – 2026)
+  Directed team mission strategy, mechanical gear assemblies, and autonomous sensor dead-reckoning navigation; achieved First Runner-Up in the Robot Game across top Abu Dhabi schools.
+
+• Male Varsity Football Player — ADEK Cup & CBSE Clusters (2024 – Present)
+  Selected for the Abu Dhabi Indian School Male Varsity Football Team competing in the prestigious ADEK Cup across two consecutive seasons (current 2025–26 tournament campaign active); represented school at the national CBSE Cluster level.
+
+• Student Committee Delegate — Model United Nations (MUN) (2024 – 2025)
+  Represented designated country delegations in formal multilateral debates, drafting resolutions, and negotiating policy frameworks on international affairs.
+
+• Top 12 Finalist Team — Curtin University STEM Challenge (2026)
+  Engineered practical STEM prototype addressing real-world regional challenges, recognized among top 12 finalist teams across UAE schools at Curtin University Dubai.
+
+• First Place Champion — ADIS Speedcubing Championship (2022)
+  Secured 1st Place in school-wide Rubik's Cube speedcubing competition with sub-20 second algorithmic solutions.

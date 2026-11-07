@@ -260,3 +260,75 @@
 .preserve-3d {
   transform-style: preserve-3d;
 }
+
+/* ATS-Compliant Print Styles */
+@media print {
+  @page {
+    margin: 12mm 15mm;
+    size: A4 portrait;
+  }
+  
+  html, body {
+    background: #ffffff !important;
+    color: #111827 !important;
+    font-size: 10pt !important;
+  }
+
+  /* Hide non-resume interface during print */
+  header, nav, #top, #about, #projects, #skills, #experience, #awards, #certificates, #contact, footer,
+  .resume-modal-header,
+  .resume-modal-footer,
+  button,
+  .no-print {
+    display: none !important;
+  }
+
+  .resume-modal-container {
+    position: static !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-shadow: none !important;
+    border: none !important;
+    background: #ffffff !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: visible !important;
+  }
+
+  #ats-resume-content {
+    background: #ffffff !important;
+    color: #111827 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+  }
+
+  #ats-resume-content * {
+    color: #111827 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  #ats-resume-content h1 {
+    color: #0f172a !important;
+    font-size: 20pt !important;
+    font-weight: 800 !important;
+  }
+
+  #ats-resume-content h2 {
+    color: #0f172a !important;
+    font-size: 10.5pt !important;
+    font-weight: 700 !important;
+    border-bottom: 1.5px solid #0f172a !important;
+    padding-bottom: 2px !important;
+    margin-top: 10pt !important;
+    margin-bottom: 4pt !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.05em !important;
+  }
+
+  #ats-resume-content a {
+    text-decoration: none !important;
+    color: #0f172a !important;
+  }
+}
