@@ -54,11 +54,11 @@ export const Hero: React.FC<HeroProps> = () => {
             </h1>
 
             {/* Tagline */}
-            <p className="text-lg sm:text-xl text-slate-300 font-normal leading-relaxed max-w-2xl mb-8">
-              Systems engineer and full-stack developer in Abu Dhabi. Building real-world technology—from
-              <span className="text-white font-semibold"> custom ESP32/STM32 embedded electronics</span> and
-              <span className="text-white font-semibold"> LoRa environmental buoys</span> to
-              <span className="text-white font-semibold"> high-scale community web platforms</span> and AI applications.
+            <p className="text-lg sm:text-xl text-slate-300 light:text-slate-700 font-normal leading-relaxed max-w-2xl mb-8">
+              High school student, robotics lead, and aspiring computer engineer in Abu Dhabi. Building real-world technology—from
+              <span className="text-white light:text-slate-900 font-semibold"> custom ESP32/STM32 embedded electronics</span> and
+              <span className="text-white light:text-slate-900 font-semibold"> LoRa environmental buoys</span> to
+              <span className="text-white light:text-slate-900 font-semibold"> high-scale community web platforms</span> and AI applications.
             </p>
 
             {/* Action Buttons */}

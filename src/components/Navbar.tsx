@@ -68,7 +68,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             joel<span className="text-[#ff5d35]">.</span>cyril
           </span>
           <span className="hidden sm:inline-block px-2 py-0.5 text-[10px] uppercase font-mono font-semibold tracking-wider rounded-full bg-white/[0.06] text-slate-300 border border-white/[0.08]">
-            Engineer
+            Student &middot; Builder
           </span>
         </a>
 
