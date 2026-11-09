@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Joel Thomas Cyril - ATS Resume</title>
+  <title>JOEL THOMAS CYRIL - Curriculum Vitae</title>
   <style>
     @page {
       size: A4 portrait;
-      margin: 12mm 14mm 12mm 14mm;
+      margin: 13mm 15mm 13mm 15mm;
     }
     * {
       box-sizing: border-box;
@@ -15,284 +15,510 @@
     }
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      color: #111827;
+      color: #1e293b;
       background: #ffffff;
-      font-size: 9.5pt;
-      line-height: 1.38;
-      letter-spacing: -0.01em;
+      font-size: 8.8pt;
+      line-height: 1.35;
+      -webkit-font-smoothing: antialiased;
     }
+    .page {
+      width: 100%;
+    }
+    .page-break {
+      page-break-after: always;
+      break-after: page;
+    }
+
+    /* Header */
     .header {
-      text-align: center;
-      border-bottom: 2px solid #0f172a;
-      padding-bottom: 7px;
-      margin-bottom: 10px;
+      margin-bottom: 11px;
     }
-    h1 {
-      font-size: 20pt;
+    h1.name {
+      font-size: 22pt;
       font-weight: 800;
       letter-spacing: 0.02em;
       color: #0f172a;
-      margin-bottom: 2px;
+      line-height: 1.1;
+      margin-bottom: 4px;
       text-transform: uppercase;
     }
-    .subtitle {
-      font-size: 10pt;
-      font-weight: 600;
-      color: #ea580c;
-      margin-bottom: 4px;
-      letter-spacing: 0.02em;
+    .tagline {
+      font-size: 9.5pt;
+      font-weight: 700;
+      color: #0284c7;
+      margin-bottom: 5px;
+      letter-spacing: 0.01em;
     }
-    .contact-line {
+    .contact-info {
       font-size: 8.5pt;
-      color: #374151;
-      font-family: "Courier New", Courier, monospace;
-      font-weight: 600;
+      color: #334155;
+      margin-bottom: 2px;
     }
-    .contact-line a {
-      color: #0f172a;
+    .links-info {
+      font-size: 8.5pt;
+      color: #334155;
+      margin-bottom: 6px;
+    }
+    .links-info a, .contact-info a {
+      color: #0284c7;
       text-decoration: none;
     }
+    .divider-rule {
+      height: 2.5px;
+      background: #0f4c81;
+      width: 100%;
+      margin-top: 4px;
+      margin-bottom: 10px;
+    }
+
+    /* Section Headings */
     .section {
-      margin-bottom: 9px;
+      margin-bottom: 10px;
     }
     .section-title {
       font-size: 9.5pt;
       font-weight: 800;
       color: #0f172a;
       text-transform: uppercase;
-      letter-spacing: 0.06em;
-      border-bottom: 1px solid #94a3b8;
+      letter-spacing: 0.12em;
+      border-bottom: 1px solid #cbd5e1;
       padding-bottom: 2px;
-      margin-bottom: 5px;
+      margin-bottom: 6px;
     }
-    .summary-text {
-      font-size: 8.8pt;
+
+    /* Content styling */
+    p.profile-text {
+      font-size: 8.5pt;
       color: #334155;
-      text-align: justify;
       line-height: 1.35;
+      text-align: justify;
     }
-    .item {
-      margin-bottom: 5.5px;
+
+    /* Education */
+    .edu-item {
+      margin-bottom: 6px;
     }
-    .item-header {
+    .flex-header {
       display: flex;
       justify-content: space-between;
       align-items: baseline;
-      font-weight: 700;
       font-size: 9pt;
+      font-weight: 700;
       color: #0f172a;
     }
-    .item-header .right-date {
+    .flex-header .location-date {
       font-size: 8.5pt;
       font-weight: 600;
       color: #475569;
-      font-family: "Courier New", Courier, monospace;
     }
-    .item-subtitle {
+    .edu-sub {
+      font-size: 8.5pt;
+      color: #334155;
+      margin-top: 1px;
+    }
+    .edu-bold-scores {
+      font-size: 8.5pt;
+      color: #0f172a;
+      margin-top: 1.5px;
+    }
+
+    /* Technical Skills Table */
+    .skills-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 8.5pt;
+    }
+    .skills-table tr {
+      border-bottom: 1px solid #f1f5f9;
+    }
+    .skills-table td {
+      padding: 2.5px 0;
+      vertical-align: top;
+    }
+    .skill-category {
+      width: 165px;
+      font-weight: 700;
+      color: #0f172a;
+      padding-right: 12px;
+    }
+    .skill-values {
+      color: #334155;
+    }
+
+    /* Projects */
+    .project-item {
+      margin-bottom: 8.5px;
+    }
+    .project-title-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-size: 9pt;
+      font-weight: 700;
+      color: #0f172a;
+    }
+    .project-title-line .proj-date {
       font-size: 8.5pt;
       font-weight: 600;
-      color: #ea580c;
+      color: #475569;
+    }
+    .project-tech {
+      font-size: 8.2pt;
+      font-weight: 600;
+      color: #0284c7;
+      margin-top: 0.5px;
       margin-bottom: 2px;
     }
-    .item-desc {
-      font-size: 8.5pt;
-      color: #334155;
-      line-height: 1.3;
+    .project-tech a {
+      color: #0284c7;
+      text-decoration: none;
     }
-    ul {
+    ul.project-bullets {
       list-style-type: disc;
       margin-left: 14px;
-      margin-top: 2px;
+      margin-top: 1.5px;
     }
-    li {
-      font-size: 8.5pt;
+    ul.project-bullets li {
+      font-size: 8.3pt;
       color: #334155;
       margin-bottom: 1.5px;
-      line-height: 1.3;
+      line-height: 1.32;
     }
-    li strong {
-      color: #0f172a;
+
+    /* Leadership */
+    .leadership-item {
+      margin-bottom: 6px;
     }
-    .skills-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 3px;
-      font-size: 8.5pt;
-    }
-    .skill-row {
+    .leadership-header {
       display: flex;
-      line-height: 1.3;
-    }
-    .skill-cat {
-      width: 140px;
+      justify-content: space-between;
+      align-items: baseline;
+      font-size: 8.8pt;
       font-weight: 700;
       color: #0f172a;
-      flex-shrink: 0;
     }
-    .skill-list {
+    .leadership-header .lead-date {
+      font-size: 8.5pt;
+      font-weight: 600;
+      color: #475569;
+    }
+    .leadership-desc {
+      font-size: 8.3pt;
       color: #334155;
+      margin-top: 1px;
+      line-height: 1.3;
     }
-    .badge-highlight {
-      background: #fef3c7;
-      color: #92400e;
+
+    /* Awards Table */
+    .awards-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 8.3pt;
+      margin-top: 2px;
+    }
+    .awards-table tr {
+      border-bottom: 1px solid #f1f5f9;
+    }
+    .awards-table td {
+      padding: 3px 0;
+      vertical-align: top;
+    }
+    .award-year {
+      width: 75px;
       font-weight: 700;
-      padding: 0 4px;
-      border-radius: 2px;
-      display: inline-block;
+      color: #0284c7;
+    }
+    .award-comp {
+      width: 250px;
+      font-weight: 700;
+      color: #0f172a;
+      padding-right: 10px;
+    }
+    .award-result {
+      color: #334155;
     }
   </style>
 </head>
 <body>
 
-  <div class="header">
-    <h1>Joel Thomas Cyril</h1>
-    <div class="subtitle">Candidate for Undergraduate Computer Engineering · Embedded Systems, Web &amp; AI</div>
-    <div class="contact-line">
-      Abu Dhabi, UAE &nbsp;|&nbsp; joeltcyril@gmail.com &nbsp;|&nbsp; +971 50 148 4596 &nbsp;|&nbsp; github.com/JoelCyril &nbsp;|&nbsp; joel-cyril-info.vercel.app
+  <!-- ==================== PAGE 1 ==================== -->
+  <div class="page page-break">
+    <!-- Header -->
+    <div class="header">
+      <h1 class="name">JOEL THOMAS CYRIL</h1>
+      <div class="tagline">Electronics and Computer Engineering Applicant &nbsp;|&nbsp; Embedded Systems &nbsp;|&nbsp; Full-Stack Development</div>
+      <div class="contact-info">
+        Abu Dhabi, UAE &nbsp;•&nbsp; +971 56 747 6800 &nbsp;•&nbsp; <a href="mailto:joeltcyril@gmail.com">joeltcyril@gmail.com</a>
+      </div>
+      <div class="links-info">
+        GitHub: <a href="https://github.com/JoelCyril" target="_blank">github.com/JoelCyril</a> &nbsp;•&nbsp; Portfolio: <a href="https://joel-cyril-info-joelcyrils-projects.vercel.app/" target="_blank">joel-cyril-info-joelcyrils-projects.vercel.app</a>
+      </div>
+      <div class="divider-rule"></div>
+    </div>
+
+    <!-- PROFILE -->
+    <div class="section">
+      <div class="section-title">P R O F I L E</div>
+      <p class="profile-text">
+        CBSE Class XII student pursuing undergraduate study in Electronics and Computer Engineering, with hands-on experience designing custom electronic devices, developing embedded firmware, and building practical software systems. Projects span ESP32 and STM32 hardware, RF and LoRa communications, robotics, AI-assisted education tools, and self-hosted web applications.
+      </p>
+    </div>
+
+    <!-- EDUCATION -->
+    <div class="section">
+      <div class="section-title">E D U C A T I O N</div>
+      <div class="edu-item">
+        <div class="flex-header">
+          <span>Abu Dhabi Indian School (ADIS)</span>
+          <span class="location-date">Abu Dhabi, UAE</span>
+        </div>
+        <div class="edu-sub">CBSE Senior Secondary (Class XII) &nbsp;•&nbsp; Computer Science, Physics and Mathematics</div>
+        <div class="edu-bold-scores">
+          CBSE Class X board results: <strong>Mathematics 100/100</strong> &nbsp;•&nbsp; <strong>English Language and Literature 95/100</strong>
+        </div>
+      </div>
+
+      <div class="edu-item" style="margin-top: 4px;">
+        <div class="flex-header">
+          <span>IIT Madras, Centre for Outreach and Digital Education (CODE)</span>
+          <span class="location-date">2026</span>
+        </div>
+        <div class="edu-sub">
+          Introduction to Electronic Systems &nbsp;•&nbsp; Eight-week certificate course in circuits, semiconductors, op-amps and digital electronics
+        </div>
+      </div>
+    </div>
+
+    <!-- TECHNICAL SKILLS -->
+    <div class="section">
+      <div class="section-title">T E C H N I C A L &nbsp; S K I L L S</div>
+      <table class="skills-table">
+        <tr>
+          <td class="skill-category">Languages</td>
+          <td class="skill-values">C, C++, Python, TypeScript, JavaScript, SQL, HTML and CSS</td>
+        </tr>
+        <tr>
+          <td class="skill-category">Embedded and Control</td>
+          <td class="skill-values">ESP32, STM32WLE5, FreeRTOS, PID control, sensors</td>
+        </tr>
+        <tr>
+          <td class="skill-category">PCB and Interfaces</td>
+          <td class="skill-values">KiCad, PCB design, I2C, SPI, UART, RS-485</td>
+        </tr>
+        <tr>
+          <td class="skill-category">Wireless and RF</td>
+          <td class="skill-values">LoRa, CC1101 Sub-GHz RF, PN532 NFC/RFID, infrared</td>
+        </tr>
+        <tr>
+          <td class="skill-category">Web and Backend</td>
+          <td class="skill-values">React, Node.js, FastAPI, REST APIs, WebSockets, Vite, Tailwind CSS</td>
+        </tr>
+        <tr>
+          <td class="skill-category">Data</td>
+          <td class="skill-values">PostgreSQL, SQLite, Supabase, Tesseract OCR</td>
+        </tr>
+        <tr>
+          <td class="skill-category">Tools and Infrastructure</td>
+          <td class="skill-values">Linux, Docker, Git/GitHub, Vercel</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- SELECTED ENGINEERING PROJECTS (Part 1) -->
+    <div class="section">
+      <div class="section-title">S E L E C T E D &nbsp; E N G I N E E R I N G &nbsp; P R O J E C T S</div>
+
+      <!-- Reaper One -->
+      <div class="project-item">
+        <div class="project-title-line">
+          <span>Reaper One &nbsp;|&nbsp; Multi-Protocol Handheld Device</span>
+          <span class="proj-date">2024–2026</span>
+        </div>
+        <div class="project-tech">
+          ESP32 &nbsp;•&nbsp; C++ &nbsp;•&nbsp; KiCad &nbsp;•&nbsp; FreeRTOS &nbsp;•&nbsp; CC1101 &nbsp;•&nbsp; NFC/RFID &nbsp;|&nbsp; <a href="https://github.com/JoelCyril/reaper1.2" target="_blank">github.com/JoelCyril/reaper1.2</a>
+        </div>
+        <ul class="project-bullets">
+          <li>Designed and assembled a compact ESP32-based device integrating Sub-GHz radio, NFC/RFID, infrared, Wi-Fi and Bluetooth LE, with a custom circuit board and 3D-designed enclosure.</li>
+          <li>Developed menu-driven C++ firmware and integrated modules over SPI, I2C and GPIO; iterated hardware and firmware prototypes over approximately 18 months.</li>
+        </ul>
+      </div>
+
+      <!-- ADIS ReadTrack -->
+      <div class="project-item">
+        <div class="project-title-line">
+          <span>ADIS ReadTrack &nbsp;|&nbsp; AI-Assisted Reading Assessment Platform</span>
+          <span class="proj-date">2026</span>
+        </div>
+        <div class="project-tech">
+          React &nbsp;•&nbsp; TypeScript &nbsp;•&nbsp; Supabase &nbsp;•&nbsp; PostgreSQL &nbsp;•&nbsp; Tesseract OCR
+        </div>
+        <ul class="project-bullets">
+          <li>Developed a school reading and assessment portal in consultation with English teachers, designed to support approximately 2,000 ADIS students.</li>
+          <li>Implemented student-card OCR onboarding, reading activity tracking, AI-assisted assessments and class-level literacy leaderboards.</li>
+        </ul>
+      </div>
     </div>
   </div>
 
-  <div class="section">
-    <div class="section-title">01 // Professional Summary</div>
-    <p class="summary-text">
-      Aspiring Computer Engineering undergraduate with deep practical engineering experience across low-power embedded electronics (ESP32, STM32, Sub-GHz LoRa, custom KiCAD PCBs), full-stack software development (React 19, TypeScript, Node.js, PostgreSQL), and applied AI systems. Demonstrates a verified record of scalable real-world impact—engineering and deploying an AI educational assessment portal to <strong>2,000+ active students</strong>, launching a zero-cost community web platform, captaining award-winning competitive robotics teams (<strong>FLL First Runner-Up</strong>), and maintaining elite academic rigor (<span class="badge-highlight">100/100 CBSE Mathematics Centum score</span>).
-    </p>
-  </div>
-
-  <div class="section">
-    <div class="section-title">02 // Education &amp; Academic Honors</div>
-    
-    <div class="item">
-      <div class="item-header">
-        <span>Abu Dhabi Indian School (ADIS) — Abu Dhabi, UAE</span>
-        <span class="right-date">Graduation: 2026</span>
+  <!-- ==================== PAGE 2 ==================== -->
+  <div class="page">
+    <div class="section">
+      <!-- SwapUAE -->
+      <div class="project-item">
+        <div class="project-title-line">
+          <span>SwapUAE &nbsp;|&nbsp; Cashless Community Marketplace</span>
+          <span class="proj-date">2026</span>
+        </div>
+        <div class="project-tech">
+          React &nbsp;•&nbsp; TypeScript &nbsp;•&nbsp; Node.js &nbsp;•&nbsp; PostgreSQL &nbsp;•&nbsp; WebSockets &nbsp;|&nbsp; <a href="https://github.com/JoelCyril/swap" target="_blank">github.com/JoelCyril/swap</a>
+        </div>
+        <ul class="project-bullets">
+          <li>Co-developed a peer-to-peer barter platform with listings, trade offers and real-time messaging; early launch reached 100+ users, 110+ listings and 12+ trades.</li>
+          <li>Built a self-hosted Linux NAS from reused computer parts to support affordable application infrastructure after free cloud limits became restrictive.</li>
+        </ul>
       </div>
-      <div class="item-subtitle">Senior Secondary (Grade XII CBSE) · Concentration in Computer Science, Mathematics &amp; Physics</div>
-      <ul style="margin-top: 1px;">
-        <li><span class="badge-highlight">★ 100/100 Perfect Centum Score</span> in Grade X CBSE Mathematics Board Examination.</li>
-        <li><strong>95/100</strong> in Grade X CBSE English Language &amp; Literature; consistent top academic percentile across high school cohort.</li>
-      </ul>
+
+      <!-- Manarat Al-Qurm -->
+      <div class="project-item">
+        <div class="project-title-line">
+          <span>Manarat Al-Qurm &nbsp;|&nbsp; Mangrove Monitoring and LoRa Telemetry</span>
+          <span class="proj-date">2026</span>
+        </div>
+        <div class="project-tech">
+          STM32WLE5 &nbsp;•&nbsp; LoRa &nbsp;•&nbsp; Raspberry Pi &nbsp;•&nbsp; Python &nbsp;•&nbsp; FastAPI &nbsp;•&nbsp; SQLite
+        </div>
+        <ul class="project-bullets">
+          <li>Designed a low-power coastal monitoring architecture transmitting sensor readings from a buoy to a local Raspberry Pi gateway using LoRa.</li>
+          <li>Developed a dashboard for six water-quality parameters and offline 48-hour trend forecasting to support environmental monitoring.</li>
+        </ul>
+      </div>
+
+      <!-- Underwater ROV -->
+      <div class="project-item">
+        <div class="project-title-line">
+          <span>Underwater Remotely Operated Vehicle (ROV) &nbsp;|&nbsp; Robotics</span>
+          <span class="proj-date">2026</span>
+        </div>
+        <div class="project-tech">
+          ESP32 &nbsp;•&nbsp; C++ &nbsp;•&nbsp; RS-485 &nbsp;•&nbsp; Brushless motors &nbsp;•&nbsp; PID control
+        </div>
+        <ul class="project-bullets">
+          <li>Developed an underwater ROV using a tethered communication link, brushless thrusters, depth and motion sensors, and PID-based stabilization.</li>
+        </ul>
+      </div>
+
+      <!-- Pulso.ai -->
+      <div class="project-item">
+        <div class="project-title-line">
+          <span>Pulso.ai &nbsp;|&nbsp; AI Wellness Analytics Platform</span>
+          <span class="proj-date">2026</span>
+        </div>
+        <div class="project-tech">
+          React &nbsp;•&nbsp; TypeScript &nbsp;•&nbsp; Vite &nbsp;•&nbsp; Data visualization &nbsp;|&nbsp; <a href="https://github.com/JoelCyril/Pulso.ai" target="_blank">github.com/JoelCyril/Pulso.ai</a>
+        </div>
+        <ul class="project-bullets">
+          <li>Built an interactive application synthesizing lifestyle inputs into wellness insights and visual dashboards aligned with UN Sustainable Development Goal 3.</li>
+        </ul>
+      </div>
+
+      <!-- Home NAS -->
+      <div class="project-item">
+        <div class="project-title-line">
+          <span>Home NAS &nbsp;|&nbsp; Self-Hosted Infrastructure</span>
+          <span class="proj-date">2026</span>
+        </div>
+        <div class="project-tech">
+          Linux &nbsp;•&nbsp; PostgreSQL &nbsp;•&nbsp; Docker &nbsp;•&nbsp; ZFS/RAID &nbsp;•&nbsp; Nginx
+        </div>
+        <ul class="project-bullets">
+          <li>Reused discarded computer components to configure local data storage, backups and reverse-proxy services for community applications, reducing dependence on paid hosting.</li>
+        </ul>
+      </div>
     </div>
 
-    <div class="item" style="margin-top: 4px;">
-      <div class="item-header">
-        <span>IIT Madras — Centre for Outreach &amp; Digital Education (CODE)</span>
-        <span class="right-date">Certified 2026</span>
-      </div>
-      <div class="item-subtitle">Course Certification: Introduction to Electronic Systems (8-Week Advanced Program)</div>
-      <p class="item-desc">Covered circuit theorems, op-amps, semiconductor physics, signal filters, and digital logic micro-architectures.</p>
-    </div>
-  </div>
+    <!-- LEADERSHIP AND EXTRACURRICULAR ACTIVITIES -->
+    <div class="section">
+      <div class="section-title">L E A D E R S H I P &nbsp; A N D &nbsp; E X T R A C U R R I C U L A R &nbsp; A C T I V I T I E S</div>
 
-  <div class="section">
-    <div class="section-title">03 // Technical Capabilities &amp; Protocols (ATS Keywords)</div>
-    <div class="skills-grid">
-      <div class="skill-row">
-        <span class="skill-cat">Languages:</span>
-        <span class="skill-list">C, C++, Python, TypeScript, JavaScript, SQL (PostgreSQL, SQLite), HTML5, CSS3, JSON.</span>
+      <div class="leadership-item">
+        <div class="leadership-header">
+          <span>Secretary, ADIS Robotics Club</span>
+          <span class="lead-date">2023–Present</span>
+        </div>
+        <p class="leadership-desc">Coordinated workshops and lab activities; mentored junior members in EV3/SPIKE programming and autonomous robotics.</p>
       </div>
-      <div class="skill-row">
-        <span class="skill-cat">Embedded &amp; Hardware:</span>
-        <span class="skill-list">ESP32, STM32 (STM32WLE5), LoRa (Sub-GHz CC1101), KiCAD (Schematic &amp; PCB Layout), FreeRTOS, Brushless Motors, PID Control, I2C, SPI, UART, RS-485, NFC/RFID (PN532), Infrared TX/RX, 3D CAD.</span>
-      </div>
-      <div class="skill-row">
-        <span class="skill-cat">Full-Stack &amp; Cloud:</span>
-        <span class="skill-list">React 19, Node.js, FastAPI, PostgreSQL, Supabase, Tailwind CSS, Vite, WebSockets, Socket.io, REST APIs, Vercel, Cloudflare.</span>
-      </div>
-      <div class="skill-row">
-        <span class="skill-cat">Systems, Tools &amp; AI:</span>
-        <span class="skill-list">Linux (Ubuntu Server), Self-Hosted Home NAS, Git, GitHub, Tesseract OCR, Predictive Telemetry, PlatformIO, Recharts.</span>
-      </div>
-    </div>
-  </div>
 
-  <div class="section">
-    <div class="section-title">04 // Featured Engineering Projects</div>
-
-    <div class="item">
-      <div class="item-header">
-        <span>ADIS ReadTrack — AI Literacy &amp; Reading Assessment Platform</span>
-        <span class="right-date">2024 – Present</span>
+      <div class="leadership-item">
+        <div class="leadership-header">
+          <span>Team Captain, FIRST LEGO League UNEARTHED</span>
+          <span class="lead-date">2025–2026</span>
+        </div>
+        <p class="leadership-desc">Led robot design and mission strategy; team placed First Runner-Up in the regional Robot Game.</p>
       </div>
-      <div class="item-subtitle">Lead Developer &amp; Systems Architect · React 19, TypeScript, Supabase, PostgreSQL, Tesseract OCR, Tailwind CSS</div>
-      <ul>
-        <li>Consulted directly with high school English teaching faculty to engineer and deploy a school-wide reading analytics portal currently serving <strong>2,000+ active students</strong> across Abu Dhabi Indian School.</li>
-        <li>Integrated camera OCR student ID verification and automated summary evaluations, eliminating paper reading logs and reducing teacher grading workload by <strong>75%</strong>.</li>
-        <li>Designed gamified inter-class PISA score leaderboards aligned with ADEK targets (480+ benchmark), with Class 12-B achieving <strong>#1 standing (546 pts)</strong> and school-wide physical education reward privileges.</li>
-      </ul>
+
+      <div class="leadership-item">
+        <div class="leadership-header">
+          <span>Varsity Football, ADIS</span>
+          <span class="lead-date">2024–2026</span>
+        </div>
+        <p class="leadership-desc">Represented the school at the ADEK Cup and the CBSE Cluster U-17 tournament.</p>
+      </div>
+
+      <div class="leadership-item">
+        <div class="leadership-header">
+          <span>Model United Nations Delegate</span>
+          <span class="lead-date">2024–2025</span>
+        </div>
+        <p class="leadership-desc">Participated in committee debate, research and resolution drafting.</p>
+      </div>
     </div>
 
-    <div class="item">
-      <div class="item-header">
-        <span>SwapUAE — Community-Driven Zero-Cash Barter Marketplace</span>
-        <span class="right-date">2024 – Present</span>
-      </div>
-      <div class="item-subtitle">Co-Founder &amp; Systems Engineer · React 19, TypeScript, Node.js, PostgreSQL, WebSockets, Linux NAS</div>
-      <ul>
-        <li>Architected full-stack trading application enabling students and UAE community members to exchange books, electronics, and supplies without monetary transactions.</li>
-        <li>Grew to <strong>100+ registered members</strong>, <strong>110+ active listings</strong>, and <strong>12+ completed verified trades</strong> within 2 weeks of launch with $0.00 marketing budget.</li>
-        <li>Engineered a custom self-hosted Linux NAS server constructed from recycled PC hardware to eliminate cloud database fees, ensuring perpetual zero-cost community hosting.</li>
-      </ul>
-    </div>
+    <!-- SELECTED AWARDS AND RECOGNITION -->
+    <div class="section">
+      <div class="section-title">S E L E C T E D &nbsp; A W A R D S &nbsp; A N D &nbsp; R E C O G N I T I O N</div>
 
-    <div class="item">
-      <div class="item-header">
-        <span>Reaper One — Multi-Protocol Handheld Hardware &amp; RF Instrument</span>
-        <span class="right-date">2024 – 2026</span>
-      </div>
-      <div class="item-subtitle">Hardware Engineer &amp; Firmware Developer · ESP32, C++, FreeRTOS, KiCAD, Sub-GHz, NFC, Infrared</div>
-      <ul>
-        <li>Engineered a standalone multi-protocol RF platform integrating Sub-GHz radio (CC1101), NFC/RFID, IR transceivers, Wi-Fi, and Bluetooth LE into a single custom PCB over 1.5 years of prototyping.</li>
-        <li>Designed multi-layer KiCAD schematics and soldered surface-mount components, multiplexing SPI, I2C, and GPIO lines under tight physical constraints with an asynchronous C++ FreeRTOS firmware menu.</li>
-      </ul>
-    </div>
-
-    <div class="item">
-      <div class="item-header">
-        <span>Pulso.ai &amp; Manarat Al-Qurm (Environmental &amp; Health AI Telemetry)</span>
-        <span class="right-date">2024 – 2026</span>
-      </div>
-      <div class="item-subtitle">Award-Winning AI Systems · React, TypeScript, STM32WLE5, Sub-GHz LoRa, FastAPI</div>
-      <ul>
-        <li><strong>Pulso.ai:</strong> Award-winning web app addressing UN SDG 3 by synthesizing lifestyle telemetry into predictive wellness risk patterns.</li>
-        <li><strong>Manarat Al-Qurm:</strong> Autonomous coastal mangrove buoy streaming 6-parameter Water Quality Indices over LoRa to Raspberry Pi with 48-hr offline AI forecasting.</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="section">
-    <div class="section-title">05 // Leadership, Competitions &amp; Athletic Excellence</div>
-    
-    <div class="item">
-      <div class="item-header">
-        <span>Elected Secretary — ADIS Robotics Club</span>
-        <span class="right-date">2023 – Present</span>
-      </div>
-      <p class="item-desc">Elected to executive leadership following 3 consecutive years of dedicated membership. Supervise weekly technical workshops, maintain lab equipment, and mentor junior students in EV3/SPIKE coding and autonomous navigation.</p>
-    </div>
-
-    <div class="item">
-      <div class="item-header">
-        <span>Team Captain &amp; Lead Engineer — FIRST LEGO League (UNEARTHED)</span>
-        <span class="right-date">2025 – 2026</span>
-      </div>
-      <p class="item-desc">Directed competition robot chassis mechanical design, mission strategy, and autonomous sensor dead-reckoning; secured <strong>First Runner-Up in the Robot Game</strong> across top Abu Dhabi schools.</p>
-    </div>
-
-    <div class="item">
-      <div class="item-header">
-        <span>Male Varsity Football Starter — ADEK Cup &amp; CBSE Clusters</span>
-        <span class="right-date">2024 – Present</span>
-      </div>
-      <p class="item-desc">Selected for Abu Dhabi Indian School starting varsity team in the premier ADEK Cup tournament across two consecutive seasons (current 2025–26 campaign active); represented school at the national CBSE Cluster level.</p>
-    </div>
-
-    <div class="item">
-      <div class="item-header">
-        <span>Honors: Curtin University STEM Top 12 | MUN Delegate | Speedcubing Champion</span>
-        <span class="right-date">2022 – 2026</span>
-      </div>
-      <p class="item-desc">Top 12 Finalist Team in Curtin STEM Challenge Dubai (2026) · Model United Nations committee delegate (2024–25) · 1st Place Champion in ADIS Rubik's Cube Speedcubing Championship (2022).</p>
+      <table class="awards-table">
+        <tr>
+          <td class="award-year">2026</td>
+          <td class="award-comp">RIT Annual Engineering Competition</td>
+          <td class="award-result">First Runner-Up; AED 20,000 scholarship</td>
+        </tr>
+        <tr>
+          <td class="award-year">2026</td>
+          <td class="award-comp">ADU STEM Engineering and Coding Competition</td>
+          <td class="award-result">Top 10 of 512 teams (2,083 students, 92 schools)</td>
+        </tr>
+        <tr>
+          <td class="award-year">2026</td>
+          <td class="award-comp">Curtin University Dubai STEM Challenge</td>
+          <td class="award-result">Top 12 finalist team, ADIS Elites</td>
+        </tr>
+        <tr>
+          <td class="award-year">2025</td>
+          <td class="award-comp">Inter-School English Short Film</td>
+          <td class="award-result">Second position, Indian School Al Ain</td>
+        </tr>
+        <tr>
+          <td class="award-year">2024</td>
+          <td class="award-comp">Mayoor Inter-School STEM Competition</td>
+          <td class="award-result">First Runner-Up, senior division</td>
+        </tr>
+        <tr>
+          <td class="award-year">2022–2025</td>
+          <td class="award-comp">Chess and Speedcubing</td>
+          <td class="award-result">1st Marthoma Smruthi Chess (2025); 1st ADIS Speedcubing (2022); 2nd School Chess (2024)</td>
+        </tr>
+        <tr>
+          <td class="award-year">2024–2025</td>
+          <td class="award-comp">Football and Other Sports</td>
+          <td class="award-result">1st ADIS Inter-House Football (2024); Badminton runner-up (2025); Carrom doubles 2nd (2025)</td>
+        </tr>
+        <tr>
+          <td class="award-year">2023–2024</td>
+          <td class="award-comp">Performing Arts</td>
+          <td class="award-result">First prize, Malayalam solo singing</td>
+        </tr>
+      </table>
     </div>
   </div>
 
