@@ -2,6 +2,31 @@ import { ExperienceItem } from '../types';
 
 export const EXPERIENCES: ExperienceItem[] = [
   {
+    period: '2026',
+    role: 'Engineering Competitor · First Runner-Up (AED 20,000 Scholarship)',
+    organization: 'RIT Annual Engineering Competition (RIT Dubai)',
+    location: 'Dubai, UAE',
+    badge: '★ AED 20,000 Scholarship Award',
+    description: 'Awarded First Runner-Up and an AED 20,000 scholarship in Rochester Institute of Technology Dubai’s prestigious annual engineering competition, demonstrating practical engineering problem-solving and technical innovation.',
+    highlights: [
+      '★ First Runner-Up against elite engineering teams across the UAE.',
+      'Awarded an AED 20,000 scholarship for undergraduate engineering studies at RIT Dubai.',
+      'Demonstrated applied electronic, software, and hardware design excellence.'
+    ]
+  },
+  {
+    period: '2026',
+    role: 'Top 10 Finalist (out of 512 Teams · 2,083 Students)',
+    organization: 'ADU STEM Engineering & Coding Competition (Abu Dhabi University)',
+    location: 'Abu Dhabi, UAE',
+    badge: 'Top 10 of 512 Teams',
+    description: 'Achieved a Top 10 finish out of 512 competing teams representing 2,083 students and 92 schools across the UAE in comprehensive STEM and software engineering challenges.',
+    highlights: [
+      'Top 10 standing among 2,083 students and 512 teams statewide.',
+      'Solved rigorous algorithm design, applied logic, and engineering speed problems.'
+    ]
+  },
+  {
     period: 'ACADEMIC DISTINCTION',
     role: 'Grade XII CS Scholar · 100/100 Perfect Score in Mathematics',
     organization: 'Abu Dhabi Indian School (ADIS)',

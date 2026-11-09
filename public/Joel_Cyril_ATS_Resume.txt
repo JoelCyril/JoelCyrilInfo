@@ -1,92 +1,120 @@
+================================================================================
 JOEL THOMAS CYRIL
 Electronics and Computer Engineering Applicant | Embedded Systems | Full-Stack Development
-Abu Dhabi, UAE • +971 56 747 6800 • joeltcyril@gmail.com
-GitHub: github.com/JoelCyril • Portfolio: joel-cyril-info-joelcyrils-projects.vercel.app
-
+Abu Dhabi, UAE | +971 56 747 6800 | joeltcyril@gmail.com
+GitHub: https://github.com/JoelCyril | Portfolio: https://joel-cyril-info-joelcyrils-projects.vercel.app
 ================================================================================
+
 PROFILE
-================================================================================
-CBSE Class XII student pursuing undergraduate study in Electronics and Computer Engineering, with hands-on experience designing custom electronic devices, developing embedded firmware, and building practical software systems. Projects span ESP32 and STM32 hardware, RF and LoRa communications, robotics, AI-assisted education tools, and self-hosted web applications.
+--------------------------------------------------------------------------------
+CBSE Class XII student pursuing undergraduate study in Electronics and Computer
+Engineering, with hands-on experience designing custom electronic devices,
+developing embedded firmware, and building practical software systems. Projects
+span ESP32 and STM32 hardware, RF and LoRa communications, robotics, AI-assisted
+education tools, and self-hosted web applications.
 
-================================================================================
+
 EDUCATION
-================================================================================
-Abu Dhabi Indian School (ADIS) — Abu Dhabi, UAE
-CBSE Senior Secondary (Class XII) • Computer Science, Physics and Mathematics
-CBSE Class X board results: Mathematics 100/100 • English Language and Literature 95/100
+--------------------------------------------------------------------------------
+Abu Dhabi Indian School (ADIS)                                    Abu Dhabi, UAE
+CBSE Senior Secondary (Class XII) - Computer Science, Physics and Mathematics
+Board Examination Results:
+  * CBSE Class X Board Mathematics: 100/100 (Centum Score)
+  * CBSE Class X English Language and Literature: 95/100
 
-IIT Madras, Centre for Outreach and Digital Education (CODE) — 2026
-Introduction to Electronic Systems • Eight-week certificate course in circuits, semiconductors, op-amps and digital electronics
+IIT Madras, Centre for Outreach and Digital Education (CODE)                2026
+Introduction to Electronic Systems
+Eight-week certificate course in circuits, semiconductors, op-amps, and digital
+electronics.
 
-================================================================================
+
 TECHNICAL SKILLS
-================================================================================
-Languages: C, C++, Python, TypeScript, JavaScript, SQL, HTML and CSS
-Embedded and Control: ESP32, STM32WLE5, FreeRTOS, PID control, sensors
-PCB and Interfaces: KiCad, PCB design, I2C, SPI, UART, RS-485
-Wireless and RF: LoRa, CC1101 Sub-GHz RF, PN532 NFC/RFID, infrared
-Web and Backend: React, Node.js, FastAPI, REST APIs, WebSockets, Vite, Tailwind CSS
-Data: PostgreSQL, SQLite, Supabase, Tesseract OCR
-Tools and Infrastructure: Linux, Docker, Git/GitHub, Vercel
+--------------------------------------------------------------------------------
+* Languages: C, C++, Python, TypeScript, JavaScript, SQL, HTML, CSS
+* Embedded & Control: ESP32, STM32WLE5, FreeRTOS, PID control, sensors
+* PCB & Interfaces: KiCad, PCB design, I2C, SPI, UART, RS-485
+* Wireless & RF: LoRa, CC1101 Sub-GHz RF, PN532 NFC/RFID, Infrared
+* Web & Backend: React, Node.js, FastAPI, REST APIs, WebSockets, Vite, Tailwind CSS
+* Data: PostgreSQL, SQLite, Supabase, Tesseract OCR
+* Tools & Infrastructure: Linux, Docker, Git/GitHub, Vercel
 
-================================================================================
+
 SELECTED ENGINEERING PROJECTS
-================================================================================
-Reaper One | Multi-Protocol Handheld Device (2024–2026)
-ESP32 • C++ • KiCad • FreeRTOS • CC1101 • NFC/RFID | github.com/JoelCyril/reaper1.2
-• Designed and assembled a compact ESP32-based device integrating Sub-GHz radio, NFC/RFID, infrared, Wi-Fi and Bluetooth LE, with a custom circuit board and 3D-designed enclosure.
-• Developed menu-driven C++ firmware and integrated modules over SPI, I2C and GPIO; iterated hardware and firmware prototypes over approximately 18 months.
+--------------------------------------------------------------------------------
+Reaper One | Multi-Protocol Handheld Device                             2024-2026
+ESP32 | C++ | KiCad | FreeRTOS | CC1101 | NFC/RFID | https://github.com/JoelCyril/reaper1.2
+* Designed and assembled a compact ESP32-based device integrating Sub-GHz radio,
+  NFC/RFID, infrared, Wi-Fi, and Bluetooth LE, with a custom circuit board and
+  3D-designed enclosure.
+* Developed menu-driven C++ firmware and integrated modules over SPI, I2C, and
+  GPIO; iterated hardware and firmware prototypes over approximately 18 months.
 
-ADIS ReadTrack | AI-Assisted Reading Assessment Platform (2026)
-React • TypeScript • Supabase • PostgreSQL • Tesseract OCR
-• Developed a school reading and assessment portal in consultation with English teachers, designed to support approximately 2,000 ADIS students.
-• Implemented student-card OCR onboarding, reading activity tracking, AI-assisted assessments and class-level literacy leaderboards.
+ADIS ReadTrack | AI-Assisted Reading Assessment Platform                    2026
+React | TypeScript | Supabase | PostgreSQL | Tesseract OCR
+* Developed a school reading and assessment portal in consultation with English
+  teachers, designed to support approximately 2,000 ADIS students.
+* Implemented student-card OCR onboarding, reading activity tracking, AI-assisted
+  assessments, and class-level literacy leaderboards.
 
-SwapUAE | Cashless Community Marketplace (2026)
-React • TypeScript • Node.js • PostgreSQL • WebSockets | github.com/JoelCyril/swap
-• Co-developed a peer-to-peer barter platform with listings, trade offers and real-time messaging; early launch reached 100+ users, 110+ listings and 12+ trades.
-• Built a self-hosted Linux NAS from reused computer parts to support affordable application infrastructure after free cloud limits became restrictive.
+SwapUAE | Cashless Community Marketplace                                    2026
+React | TypeScript | Node.js | PostgreSQL | WebSockets | https://github.com/JoelCyril/swap
+* Co-developed a peer-to-peer barter platform with listings, trade offers, and
+  real-time messaging; early launch reached 100+ users, 110+ listings, and 12+ trades.
+* Built a self-hosted Linux NAS from reused computer parts to support affordable
+  application infrastructure after free cloud limits became restrictive.
 
-Manarat Al-Qurm | Mangrove Monitoring and LoRa Telemetry (2026)
-STM32WLE5 • LoRa • Raspberry Pi • Python • FastAPI • SQLite
-• Designed a low-power coastal monitoring architecture transmitting sensor readings from a buoy to a local Raspberry Pi gateway using LoRa.
-• Developed a dashboard for six water-quality parameters and offline 48-hour trend forecasting to support environmental monitoring.
+Manarat Al-Qurm | Mangrove Monitoring and LoRa Telemetry                    2026
+STM32WLE5 | LoRa | Raspberry Pi | Python | FastAPI | SQLite
+* Designed a low-power coastal monitoring architecture transmitting sensor
+  readings from a buoy to a local Raspberry Pi gateway using LoRa.
+* Developed a dashboard for six water-quality parameters and offline 48-hour
+  trend forecasting to support environmental monitoring.
 
-Underwater Remotely Operated Vehicle (ROV) | Robotics (2026)
-ESP32 • C++ • RS-485 • Brushless motors • PID control
-• Developed an underwater ROV using a tethered communication link, brushless thrusters, depth and motion sensors, and PID-based stabilization.
+Underwater Remotely Operated Vehicle (ROV) | Robotics                       2026
+ESP32 | C++ | RS-485 | Brushless motors | PID control
+* Developed an underwater ROV using a tethered communication link, brushless
+  thrusters, depth and motion sensors, and PID-based stabilization.
 
-Pulso.ai | AI Wellness Analytics Platform (2026)
-React • TypeScript • Vite • Data visualization | github.com/JoelCyril/Pulso.ai
-• Built an interactive application synthesizing lifestyle inputs into wellness insights and visual dashboards aligned with UN Sustainable Development Goal 3.
+Pulso.ai | AI Wellness Analytics Platform                                   2026
+React | TypeScript | Vite | Data visualization | https://github.com/JoelCyril/Pulso.ai
+* Built an interactive application synthesizing lifestyle inputs into wellness
+  insights and visual dashboards aligned with UN Sustainable Development Goal 3.
 
-Home NAS | Self-Hosted Infrastructure (2026)
-Linux • PostgreSQL • Docker • ZFS/RAID • Nginx
-• Reused discarded computer components to configure local data storage, backups and reverse-proxy services for community applications, reducing dependence on paid hosting.
+Home NAS | Self-Hosted Infrastructure                                       2026
+Linux | PostgreSQL | Docker | ZFS/RAID | Nginx
+* Reused discarded computer components to configure local data storage, backups,
+  and reverse-proxy services for community applications, reducing dependence on
+  paid hosting.
 
-================================================================================
+
 LEADERSHIP AND EXTRACURRICULAR ACTIVITIES
-================================================================================
-Secretary, ADIS Robotics Club (2023–Present)
-Coordinated workshops and lab activities; mentored junior members in EV3/SPIKE programming and autonomous robotics.
+--------------------------------------------------------------------------------
+Secretary, ADIS Robotics Club                                       2023-Present
+* Coordinated workshops and lab activities; mentored junior members in EV3/SPIKE
+  programming and autonomous robotics.
 
-Team Captain, FIRST LEGO League UNEARTHED (2025–2026)
-Led robot design and mission strategy; team placed First Runner-Up in the regional Robot Game.
+Team Captain, FIRST LEGO League UNEARTHED                              2025-2026
+* Led robot design and mission strategy; team placed First Runner-Up in the
+  regional Robot Game.
 
-Varsity Football, ADIS (2024–2026)
-Represented the school at the ADEK Cup and the CBSE Cluster U-17 tournament.
+Varsity Football, ADIS                                                 2024-2026
+* Represented the school at the ADEK Cup and the CBSE Cluster U-17 tournament.
 
-Model United Nations Delegate (2024–2025)
-Participated in committee debate, research and resolution drafting.
+Model United Nations Delegate                                          2024-2025
+* Participated in committee debate, research, and resolution drafting.
 
-================================================================================
+
 SELECTED AWARDS AND RECOGNITION
+--------------------------------------------------------------------------------
+* 2026: RIT Annual Engineering Competition - First Runner-Up; AED 20,000 scholarship
+* 2026: ADU STEM Engineering and Coding Competition - Top 10 of 512 teams
+        (2,083 students, 92 schools)
+* 2026: Curtin University Dubai STEM Challenge - Top 12 finalist team, ADIS Elites
+* 2025: Inter-School English Short Film - Second position, Indian School Al Ain
+* 2024: Mayoor Inter-School STEM Competition - First Runner-Up, senior division
+* 2022-2025: Chess and Speedcubing - 1st Marthoma Smruthi Chess (2025); 1st ADIS
+             Speedcubing (2022); 2nd School Chess (2024)
+* 2024-2025: Football and Other Sports - 1st ADIS Inter-House Football (2024);
+             Badminton runner-up (2025); Carrom doubles 2nd (2025)
+* 2023-2024: Performing Arts - First prize, Malayalam solo singing
 ================================================================================
-2026: RIT Annual Engineering Competition — First Runner-Up; AED 20,000 scholarship
-2026: ADU STEM Engineering and Coding Competition — Top 10 of 512 teams (2,083 students, 92 schools)
-2026: Curtin University Dubai STEM Challenge — Top 12 finalist team, ADIS Elites
-2025: Inter-School English Short Film — Second position, Indian School Al Ain
-2024: Mayoor Inter-School STEM Competition — First Runner-Up, senior division
-2022–2025: Chess and Speedcubing — 1st Marthoma Smruthi Chess (2025); 1st ADIS Speedcubing (2022); 2nd School Chess (2024)
-2024–2025: Football and Other Sports — 1st ADIS Inter-House Football (2024); Badminton runner-up (2025); Carrom doubles 2nd (2025)
-2023–2024: Performing Arts — First prize, Malayalam solo singing

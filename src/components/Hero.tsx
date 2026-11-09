@@ -72,8 +72,8 @@ export const Hero: React.FC<HeroProps> = () => {
               </a>
 
               <a
-                href="/Joel_Cyril_Resume.pdf"
-                download="Joel_Cyril_Resume.pdf"
+                href="/Joel_Thomas_Cyril_CV.pdf"
+                download="Joel_Thomas_Cyril_CV.pdf"
                 className="inline-flex items-center gap-2 px-5 py-3.5 rounded-full bg-white/[0.05] hover:bg-white/[0.1] border border-white/[0.12] text-white font-semibold text-sm hover:scale-[1.02] active:scale-[0.98] transition-all"
                 title="Download ATS Compliant CV (PDF)"
               >

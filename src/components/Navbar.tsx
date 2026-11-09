@@ -110,8 +110,8 @@ export const Navbar: React.FC<NavbarProps> = ({
 
           {/* Resume Download CTA */}
           <a
-            href="/Joel_Cyril_Resume.pdf"
-            download="Joel_Cyril_Resume.pdf"
+            href="/Joel_Thomas_Cyril_CV.pdf"
+            download="Joel_Thomas_Cyril_CV.pdf"
             className="flex items-center gap-2 px-4 py-2 text-xs font-semibold rounded-full bg-gradient-to-r from-[#ff5d35] to-[#f97316] text-white hover:brightness-110 shadow-[0_0_20px_-3px_rgba(255,93,53,0.4)] transition-all hover:scale-[1.02] active:scale-[0.98]"
             title="Download ATS Compliant CV (PDF)"
           >
@@ -162,8 +162,8 @@ export const Navbar: React.FC<NavbarProps> = ({
               ))}
               <div className="pt-3 border-t border-white/[0.08] flex flex-col gap-2">
                 <a
-                  href="/Joel_Cyril_Resume.pdf"
-                  download="Joel_Cyril_Resume.pdf"
+                  href="/Joel_Thomas_Cyril_CV.pdf"
+                  download="Joel_Thomas_Cyril_CV.pdf"
                   onClick={() => setMobileMenuOpen(false)}
                   className="flex items-center justify-center gap-2 w-full py-3 text-sm font-semibold rounded-xl bg-gradient-to-r from-[#ff5d35] to-[#f97316] text-white shadow-md shadow-[#ff5d35]/25"
                 >

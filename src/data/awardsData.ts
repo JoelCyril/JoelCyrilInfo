@@ -2,6 +2,24 @@ import { Award } from '../types';
 
 export const AWARDS: Award[] = [
   {
+    id: 'rit-engineering-first-runner-up',
+    title: 'RIT Annual Engineering Competition',
+    rank: 'First Runner-Up · AED 20,000 Scholarship',
+    date: '2026',
+    category: 'STEM',
+    organization: 'Rochester Institute of Technology (RIT) Dubai',
+    description: 'Secured First Runner-Up and an AED 20,000 engineering scholarship in the university-level annual engineering competition for innovative applied engineering and problem solving.'
+  },
+  {
+    id: 'adu-stem-competition-top10',
+    title: 'ADU STEM Engineering & Coding Competition',
+    rank: 'Top 10 Finalist (out of 512 Teams · 2,083 Students)',
+    date: '2026',
+    category: 'STEM',
+    organization: 'Abu Dhabi University (ADU)',
+    description: 'Placed in the Top 10 out of 512 participating teams comprising 2,083 students across 92 schools in the UAE-wide collegiate engineering and coding challenge.'
+  },
+  {
     id: 'robotics-club-secretary',
     title: 'ADIS Robotics Club Secretary',
     rank: 'Elected Club Secretary (3-Year Member)',
